@@ -23,3 +23,25 @@ int main()
 }
 
 
+Or----------------------------------------
+    
+
+#include<bits/stdc++.h>
+#include<conio.h>
+using namespace std;
+
+int main()
+{
+    int num1, num2;
+    cout<< "Enter two numbers: ";
+    cin>> num1 >> num2;
+    cout << "The numbers are: " << num1 << num2 <<endl;
+    
+    int sum = num1 + num2;
+    cout<< "The sum = " << sum;
+
+    getch();
+}
+
+
+    
