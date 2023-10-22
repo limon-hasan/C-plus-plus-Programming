@@ -19,7 +19,8 @@ int main()
 string removeLetter(string input, char letter)
 {
     string result;   // input string
-    for(char a : input)
+    for(char a : input)     // for (char c : input) starts a for-each loop. It iterates through each character (represented by char c) in the input string.
+
     {
         if(a!= letter)
             result = result+a;
