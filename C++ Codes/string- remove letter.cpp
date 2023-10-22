@@ -16,7 +16,6 @@ int main()
     return 0;
 }
 
-
 string removeLetter(string &input, char letter)
 {
     string result;   // input string
@@ -51,7 +50,6 @@ int main()
     cout << "Modified string = " << modified << endl;
     return 0;
 }
-
 
 string removeLetter(string &input, char letter)
 {
