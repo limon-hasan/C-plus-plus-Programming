@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-string removeLetter(string &input, char letter);
+string removeLetter(string input, char letter);
 
 int main()
 {
@@ -16,7 +16,7 @@ int main()
     return 0;
 }
 
-string removeLetter(string &input, char letter)
+string removeLetter(string input, char letter)
 {
     string result;   // input string
     for(char a : input)
