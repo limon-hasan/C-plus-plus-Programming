@@ -66,18 +66,3 @@ begin binarySearch(a, n, data)
     if data not found   // or,  if leftValue > rightValue
         return -1
 end binarySearch
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
