@@ -1,3 +1,6 @@
+(1)   // Code
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -26,3 +29,22 @@ int main()
     cout << linearSearch(arr, n, key) << endl;
 
 }
+
+----------------
+(2)   // Pseudocode 
+    
+
+begin linearSearch(a, n, data)
+    a <--- array to search
+    n <--- size of array
+    x <--- value to be searched
+
+    for each index from 0 to n-1
+        if a[index] equals x
+            return index
+        end if
+    end for
+
+    if data not found
+        return -1
+end linearSearch
