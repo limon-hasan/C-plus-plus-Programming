@@ -1,3 +1,6 @@
+(1)     // <--- CODE --->
+
+    
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -30,3 +33,51 @@ int main()
     cin >> key;
     cout << binarySearch(arr, n, key) << endl;
 }
+
+
+
+(2)  // Pseudocode
+// <---- Binary Search Algorithm (Pseudocode)------>
+
+    
+begin binarySearch(a, n, data)
+    a <--- sorted array
+    n <--- size of array
+    x <--- value to be searched
+    set leftValue = 0
+    set rightValue = n-1
+
+    while leftValue <= rightValue
+        set midPoint = (leftValue + rightValue) / 2
+
+        if a[midPoint] == x
+            return midPoint
+        end if
+
+        if a[midPoint] < x
+            set rightValue = midPoint - 1
+        end if
+
+        if a[midPoint] > x
+            set leftValue = midPoint + 1
+        end if
+    end while
+
+    if data not found   // or,  if leftValue > rightValue
+        return -1
+end binarySearch
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
