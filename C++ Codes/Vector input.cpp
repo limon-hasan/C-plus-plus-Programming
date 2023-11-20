@@ -21,7 +21,7 @@ int main() {
 
 
 // Again --->
-//  Without taking input of vector  --->
+//  Without taking input of vector from user --->
 
 /*
     vector < int > myVector = {2,5,7,9,1};
