@@ -59,13 +59,19 @@ vector<int> findArrayIntersection(vector<int> &arr1, int n, vector<int> &arr2, i
 	vector<int> outVector;
 	int i=0, j=0;
 	while(i<n && j<m) {
+		
+		// Elements of first array is less, increment 'i'
 		if(arr1[i] < arr2[j])
 		i++;
+			
+		// If both the elements are equal then we increase both the pointers
 		else if(arr1[i] == arr2[j]) {
 			outVector.push_back(arr1[i]);
 			i++;
 			j++;	
 		}
+			
+		// If element of first array is greater, increment 'j'
 		else
 		j++;
 	}
