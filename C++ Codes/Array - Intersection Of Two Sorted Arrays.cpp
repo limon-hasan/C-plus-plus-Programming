@@ -45,3 +45,52 @@ int main() {
 		return 0;
 	}
 }*/
+
+// -----------------------------------------------------------------
+
+
+Or,
+	
+//Optimal Approach	
+
+#include <bits/stdc++.h>
+vector<int> findArrayIntersection(vector<int> &arr1, int n, vector<int> &arr2, int m)
+{
+	vector<int> outVector;
+	int i=0, j=0;
+	while(i<n && j<m) {
+		if(arr1[i] < arr2[j])
+		i++;
+		else if(arr1[i] == arr2[j]) {
+			outVector.push_back(arr1[i]);
+			i++;
+			j++;	
+		}
+		else
+		j++;
+	}
+	return outVector;
+}
+
+/*int main() {
+	int T;
+	cin >> T;
+	for(int i=1; i<=T; i++) {
+		int N, M;
+		cin>> N>> M;
+		vector<int> A;
+		for(int i=0; i<N; i++) {
+			int element1;
+			cin>> element1;
+			A.push_back(element1);
+		}cout << endl;
+		vector<int> B;
+		for(int i=0; i<M; i++){
+			int element2;
+			cin>> element2;
+			B.push_back(element2);
+		}
+		vector<int> outVector = findArrayIntersection(A,N, B,M);
+		return 0;
+	}
+}*/	
