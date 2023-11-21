@@ -49,9 +49,9 @@ int main() {
 // -----------------------------------------------------------------
 
 
-Or,
+// Or,
 	
-//Optimal Approach	
+//Optimal Approach --->	
 
 #include <bits/stdc++.h>
 vector<int> findArrayIntersection(vector<int> &arr1, int n, vector<int> &arr2, int m)
