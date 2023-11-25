@@ -1,0 +1,19 @@
+Space complexity  <------------------------------->
+
+--> Memory Space
+--> Big-O Notation
+
+(1) - Auxiliary space : Space that you take to solve the problem
+(2) - Input Space : Space that you take to store the input
+
+If there is given an array  of size N, A[N]
+Then, Space Complexity = O(N)
+
+Or,
+there is given two variables like a,b and I have to sum up them
+so the process :--->
+
+int a , b;
+int c = a+b;   // Here, C is Auxiliary space
+So, space complexity = O(3)  because, I take 3 variables.
+But if i work on that two variables like, b = a+b; then the sace complexity will be like O(2)
