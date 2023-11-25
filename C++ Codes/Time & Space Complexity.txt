@@ -1,3 +1,28 @@
+// Time Complexity <--------------->
+
+
+O(N!)
+O(2^N)
+O(N^3)
+O(N^2)         <------------ Egula serially uporer dike gele Time Complexity high  -------->
+O(NlogN)
+O(N)
+O(logN)
+O(1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Space complexity  <------------------------------->
 
 --> Memory Space
