@@ -1,4 +1,4 @@
-// Time Complexity <--------------->
+_______________Time Complexity_______________
 
 
 O(N!)
@@ -30,11 +30,7 @@ Constrains ------->
 
 
 
-
-
-
-
-Space complexity  <------------------------------->
+___________________Space complexity______________________
 
 --> Memory Space
 --> Big-O Notation
@@ -42,10 +38,23 @@ Space complexity  <------------------------------->
 (1) - Auxiliary space : Space that you take to solve the problem
 (2) - Input Space : Space that you take to store the input
 
+## Example:
 If there is given an array  of size N, A[N]
 Then, Space Complexity = O(N)
 
-Or,
+Again, There is given array A[8]
+So, space complexity will be O(1), because size is constant or fixed
+## Example:
+
+for(int i=0; i<n; i++) {
+    vector<int> v(n);
+    for(int j=0; j<n; j++) {           // Here, Space Complexty will be O(n), because vector er size n. Space complexity loop er upore depend korbe na, loop space use
+                                          kore na. jeta space nibe shetake space complexity te felbo 
+     // codes
+    }      
+}
+
+Or________________________________
 there is given two variables like a,b and I have to sum up them
 so the process :--->
 
