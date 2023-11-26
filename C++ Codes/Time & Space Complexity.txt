@@ -19,7 +19,8 @@ Constrains ------->
 <100           -------->    O(n^4)
 <400           -------->    O(n^3)
 <2000          -------->    O(n^2 * log n)
-<10^4      -------->   O(n^2)   // Mane input limit jodi 10^4 dewa thake tokhon maximum O(n^2) porjonto Time Complexity hoite pare , kintu er uporer gula hoite parbe na
+<10^4          -------->   O(n^2)   /*** Mane input limit jodi 10^4 dewa thake tokhon maximum O(n^2) porjonto Time Complexity hoite pare , kintu er uporer gula hoite 
+                                         parbe na. Er uporer kono Time Compexity hole Time Limit Exceed (TLE) dekha dibe.    ***/
 <10^6          -------->    O(nlog n)
 <10^8          -------->    O(n), O(log n)
 
