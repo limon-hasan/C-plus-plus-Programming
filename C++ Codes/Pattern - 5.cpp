@@ -24,8 +24,9 @@ for(int i=n; i>=1; i--) {
 Or ----->
 
 void seeding(int n) {
-for(int i=1; i<=n; i++) {
-        for(int j=1; j<=n-i+1; j++) {
+for(int row=1; row<=n; row++) {
+        for(int col=1; col<=n-row+1; col++)   // j <= n-i+1 mane inner loop e (n-i+1) porjonto star print hobe 
+        {
             cout << "* ";
         }
         cout << endl;
