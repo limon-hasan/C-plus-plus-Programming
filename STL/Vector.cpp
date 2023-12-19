@@ -81,7 +81,7 @@ void explainVector() {
     cout << v.back() << endl;   //  v.back() prints the last element
 
     
-    printing vector elements using iterator
+    // printing vector elements using iterator
     vector<int > v = {1,2,3,4,5};
     for(vector<int> :: iterator it = v.begin(); it != v.end(); it++) // condition er jaygay "it < v.end()" evabeo dewa jaito 
     {
@@ -132,7 +132,7 @@ void explainVector() {
     }
 
 
-    Another example :  
+    // Another example :  
     vector<int> v = {10,20,12,23,60};
     vector<int> :: iterator it1 = v.begin();
     vector<int> :: iterator it2 = v.begin()+2;
@@ -156,7 +156,7 @@ void explainVector() {
 
 
 
-    <------- Insert function in vector ------>
+    // <------- Insert function in vector ------>
 
     vector<int> v(2, 100);  // Ekhane bujhacche 2 ta 100 ase ei 'v' vector e. Mane {100, 100}
     v.insert(v.begin(), 3);
@@ -228,7 +228,7 @@ void explainVector() {
     
 
 
-    swapping vector
+    // swapping vector
     vector <int > v1 = {10, 20};
     vector <int > v2 = {30, 40};
 
