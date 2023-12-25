@@ -25,7 +25,7 @@ int countWords(string s)
     stringstream s1(s);  // Used for breaking words
     /*  It uses a stringstream (s1) to break the input string into words.  */
     string word;
-    // The while (s1 >> word) loop extracts words from the stringstream until there are no more words left
+    // Read from the s1 stream and input it into word string
     while(s1 >> word)  /*  The while (s1 >> word) loop extracts words from the stringstream until there are no more words left.  */
     {                
         count++;
