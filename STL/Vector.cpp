@@ -179,19 +179,6 @@ void explainVector() {
     } cout << endl;
     
 
-    vector<int > p = {1,2,3,4,5};
-    p.insert(p.begin(), 9);
-    // for(auto a: p) {
-    // 	cout << a <<" ";
-    // }
-
-    vector<int> q = {340, 42};
-    p.insert(p.begin()+2, q.begin(), q.end());
-    for(auto a: p) {
-    	cout << a <<" ";
-    }	
-
-
 
     // Inserting multiple element
     vector<int> x(3, 50);
