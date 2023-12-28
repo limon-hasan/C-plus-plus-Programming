@@ -1,5 +1,5 @@
 // C++ STL
-// Deque --->  similiar to list and vector
+// Deque is a container  --->  similiar to list and vector
 
 #include <bits/stdc++.h>
 using namespace std;
