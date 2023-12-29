@@ -2,9 +2,10 @@
 using namespace std;
 
 int main() {
+	
+	// For Array
 	int n;
 	cin >> n;
-	// For Array
 	int a[n];
 	for(int i=0; i<n; i++) {
 		cin >> a[i];
