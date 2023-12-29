@@ -2,7 +2,7 @@
 
 // Queue --> FIFO (First In First Out)
 // All the operaitons are happening in constant time O(1)
-
+// Queue --> Container
 
 #include <bits/stdc++.h>
 using namespace std;
