@@ -4,7 +4,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// without using iterator
+// Using iterator loop
 string reverseString(string& s)
 {
     string reversed;
