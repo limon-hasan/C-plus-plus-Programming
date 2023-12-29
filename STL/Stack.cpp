@@ -22,7 +22,7 @@ void explainStack()
 	cout << endl;
 	cout << st.size();  // 5
 	cout << endl;
-	st.pop();  // ---> Now, size is 4 because one(top) element is popped out(deleted)
+	st.pop();  // {3,3,2,1} ---> Now, size is 4 because one(top) element is popped out(deleted)
 
 	cout << st.top() <<endl;  // 3 ---> because top element(5) is popped out
 	
