@@ -24,7 +24,7 @@ void explainMultiset() {
     // but if I give element(1) instead of giving address then it would erase all the 1 in the multiset
 
     // multiple elements are erased
-    ms.erase(ms.find(1), ms.find(1)+2);
+    ms.erase(ms.find(1), ms.find(1)+2);   // erase specific 1s denoted here
 
     
 
