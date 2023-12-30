@@ -1,3 +1,114 @@
+// Binary Search with C++ STL | Lower Bound and Upper Bound explained
+                        -----------------------------  
+                        |_____BINARY SEARCH STL_____|
+
+Q1. Check if X exists in the sorted array or not?
+
+A[] = {1, 4, 5, 8, 9}
+
+bool res = binary_search(a, a+n, 4); // Syntax
+// it returns 0  /* Here a is the element I want to start from in the range, (a+n) is the after last element and 4 is the element between them  */
+bool res = binary_search(a, a+n, 4); // it returns 1
+
+// upper_bound & lower_bound functions work nothing but log(n) which is similiar to binary search 
+
+lower_bound function:
+
+a[] = {1, 4, 5, 6, 9, 9}
+
+int ind = lower_bound(a, a+n, 4) - a;  // it returns index --> index 1
+int ind = lower_bound(a, a+n, 7) - a;  // returns 4 because 9 is in index 4 and it is greater than 7
+int ind = lower_bound(a, a+n, 10) - a;  // index 6
+
+// syntax ---> int ind = lower_bound(a.begin(), a.end(), x) - a.begin();
+
+
+upper_bound function:
+
+a[] = {1, 4, 5, 6, 9, 9}
+
+int ind = upper_bound(a, a+n, 4) - a;  // it returns index --> index 2
+int ind = upper_bound(a, a+n, 7) - a;  // returns 4 because 9 is in index 4 and it is greater than 7
+int ind = upper_bound(a, a+n, 10) - a;  // index 6
+
+// syntax ---> int ind = upper_bound(a.begin(), a.end(), x) - a.begin();
+
+
+
+Q2. Find the first occurrence of a X in a sorted array. If it does not exist print -1 
+
+A[] = {1, 4, 4, 4, 4, 9, 9, 10, 11}
+
+int ind = lower_bound(a, a+n, X) - a;
+if(ind != n && a[ind] == X)
+	cout << ind;
+else cout << -1;
+
+X = 4 --> 1(index)
+X = 2 --> -1
+X = 12 --> -1 (doesn't exist)
+
+
+
+
+Q3. Find the last occurrence of a X in a sorted array. If it does not exist print -1 
+
+A[] = {1, 4, 4, 4, 4, 9, 9, 10, 11}
+
+int ind = upper_bound(a, a+n, X) - a;
+ind--;
+
+if(ind >= 0 && a[ind] == X)
+	cout << ind;
+else cout << -1;
+
+X = 4 --> 4(index)
+X = 2 --> -1 (doesn't exist)
+X = 0 --> -1
+
+
+
+
+Q4. Find the largest number smaller than X in a sorted array. If no number exists print -1 
+
+A[] = {1, 4, 4, 4, 4, 9, 9, 10, 11}
+
+int ind = lower_bound(a, a+n, X) - a;
+ind--;
+
+if(ind >= 0)
+	cout << ind;
+else cout << -1;
+
+X = 4 --> 1(index na, number ber korte bolse tai number hocche 1)  because of (ind--)
+X = 2 --> 1
+X = 1 --> -1(no number exists)
+
+
+
+
+
+Q5. Find the smallest number greater than X in a sorted array. If no number exists print -1 
+
+A[] = {1, 4, 4, 4, 4, 9, 9, 10, 11}
+
+int ind = upper_bound(a, a+n, X) - a;
+
+if(ind < n)
+	cout << ind;
+else cout << -1;
+
+X = 4 --> 9(index na, number ber korte bolse tai number hocche 1)  because of (ind--)
+X = 2 --> 4
+X = 1 --> 4
+X = 11 --> -1(no number exists)	
+
+
+	
+________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
