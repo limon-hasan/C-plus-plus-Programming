@@ -45,6 +45,7 @@ if(ind != n && a[ind] == X)
 	cout << ind;
 else cout << -1;
 
+Now check for,
 X = 4 --> 1(index)
 X = 2 --> -1
 X = 12 --> -1 (doesn't exist)
@@ -63,6 +64,7 @@ if(ind >= 0 && a[ind] == X)
 	cout << ind;
 else cout << -1;
 
+Now check for,
 X = 4 --> 4(index)
 X = 2 --> -1 (doesn't exist)
 X = 0 --> -1
@@ -81,6 +83,7 @@ if(ind >= 0)
 	cout << ind;
 else cout << -1;
 
+Now check for,
 X = 4 --> 1(index na, number ber korte bolse tai number hocche 1)  because of (ind--)
 X = 2 --> 1
 X = 1 --> -1(no number exists)
@@ -99,6 +102,7 @@ if(ind < n)
 	cout << ind;
 else cout << -1;
 
+Now check for,
 X = 4 --> 9(index na, number ber korte bolse tai number hocche 1)  because of (ind--)
 X = 2 --> 4
 X = 1 --> 4
