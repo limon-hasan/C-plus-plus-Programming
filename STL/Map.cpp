@@ -1,6 +1,7 @@
 // C++ STL
 
 // Map
+//  Map works in logarithmic time --> O(log(n))
 
 // Map as a container which stores everything respect of key and values --> {key, value}
 // This key has to be unique(like roll numbers) but the value can be same of them(like name) 
