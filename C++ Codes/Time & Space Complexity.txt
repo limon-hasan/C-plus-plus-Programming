@@ -10,6 +10,7 @@ O(N)
 O(logN)
 O(1)
 
+// Whenever the number of iterations depend on division(divide by 10 or divide by 2) then the time complexity will be logarithmic that means log()
 
 
 Constrains ------->
