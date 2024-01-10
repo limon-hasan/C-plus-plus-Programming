@@ -4,6 +4,7 @@
 
 // Overall Time Complexity --> O(sqrt(n)) + O(no of factors * log(no of factors)) + O(no of factors))
 
+// Optimal Method : 
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -45,6 +46,7 @@ int main() {
 // OR --->
 // (2)  ==>  Using set
 
+// Optimal Method : 
 #include <bits/stdc++.h>
 using namespace std;
 
