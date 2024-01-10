@@ -78,3 +78,34 @@ int main() {
     printDivisor(n);
     return 0;
 }    
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Brute-force Approach -->
+#include <bits/stdc++.h>
+using namespace std;
+
+void printDivisor(int n) {
+	vector<int> divisor;
+	set<int> Divisor;
+    for(int i=1; i<=n; i++) {
+        if(n%i == 0) {
+        	divisor.push_back(i);
+        }
+        Divisor.insert(divisor.begin(), divisor.end());
+    }
+    for(auto a : Divisor) {
+    	cout << a <<" ";
+    }
+}
+
+int main() {
+
+    int n;
+    cin >> n;
+
+    printDivisor(n);
+    return 0;
+}
