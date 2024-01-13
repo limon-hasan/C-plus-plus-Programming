@@ -16,7 +16,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int cnt = 0;
+int cnt = 0;   // global variable
 void print() {
 	if(cnt == 3) 
 		return;  // function gets terminated
