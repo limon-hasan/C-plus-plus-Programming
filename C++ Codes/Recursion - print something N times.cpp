@@ -16,8 +16,11 @@ int main() {
   
   int n;
   cin >> n;
+  
+  // Create an empty vector to store the result in result vector
   vector<int> result;
   
+  // Calling the function and capturing the result in result vector
   printNos(1, n, result);
 
   for(auto a : result) {
