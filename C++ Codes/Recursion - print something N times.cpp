@@ -24,3 +24,33 @@ int main() {
     cout << a <<  " ";
   } cout << endl;
 }
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+  
+// Solution 2 :
+#include <iostream>
+#include <vector>
+using namespace std;
+
+vector<int> printNos(int i, int x, vector<int> &result) {
+  if (i > x) {
+    return result;
+  }
+  result.push_back(i);
+  printNos(i + 1, x, result);
+  return result;
+}
+int main() {
+  int n;
+  cin >> n;
+
+  vector<int> ans;
+  ans = printNos(1, n, ans);
+  for (auto a : ans) {
+    cout << a << " ";
+  }
+  cout << endl;
+}
