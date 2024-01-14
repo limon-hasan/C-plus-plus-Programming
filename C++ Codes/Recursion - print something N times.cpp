@@ -46,6 +46,7 @@ vector<int> printNos(int i, int x, vector<int> &result) {
   printNos(i + 1, x, result);
   return result;
 }
+
 int main() {
   int n;
   cin >> n;
