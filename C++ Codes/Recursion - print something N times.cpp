@@ -1,4 +1,4 @@
-// Solution 1:
+// Solution 1 -> FULL CODE:
 
 #include <iostream>
 #include <vector>
@@ -30,7 +30,7 @@ int main() {
 
 
   
-// Solution 2 :
+// Solution 2 -> FULL CODE :
 #include <iostream>
 #include <vector>
 using namespace std;
