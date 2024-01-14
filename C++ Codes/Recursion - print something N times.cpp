@@ -44,7 +44,7 @@ vector<int> printNos(int i, int x, vector<int> &result) {
   }
   result.push_back(i);
   printNos(i + 1, x, result);
-  return result;    // result return na kore direct return printNos(i+1, x, result) dileo hoto
+  return result;    // "result return;" na kore direct "return printNos(i+1, x, result);" dileo hoto
 }
 
 int main() {
