@@ -58,3 +58,39 @@ int main() {
   }
   cout << endl;
 }
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+  
+// Solution 3 -> FULL CODE :
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+vector<int> printNos(int x) {
+	if(x == 0)
+		return vector<int>();  /* This line creates and returns an empty vector<int>. 
+	                           Essentially, it means that when the value of x becomes 0, the recursion stops, and an empty vector is returned */
+	else {
+		vector<int> ans = printNos(x-1);   // In a recursive function, you typically want to capture the result of the recursive call because it contributes to building the final result.
+		ans.push_back(x);
+		return ans;
+	}
+}
+
+int main() {
+    int n;
+    cin >> n;
+
+    vector<int> result = printNos(n);
+    
+    // Print the result after the recursion
+    for (int i : result) {
+        cout << i << " ";
+    }
+
+    return 0;
+}
