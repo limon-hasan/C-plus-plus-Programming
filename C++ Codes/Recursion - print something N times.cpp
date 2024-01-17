@@ -166,6 +166,7 @@ So, for the input 3, the function printNos(3) returns the vector {1, 2, 3}.
 
 // Solution 4 -> FULL CODE :
 
+// (i) -->
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -199,3 +200,43 @@ int main() {
 
     return 0;
 }
+
+
+
+<---------------- Another way ------------------->
+	
+// (ii) -->
+#include <iostream>
+#include <vector>
+using namespace std;
+
+vector<int> recursiveFunction(int i, int x, vector<int> &final) {
+	if(i > x)
+		return final; // return vector<int>(); dileo hoto ekhane
+	else {
+		final.push_back(i);
+		recursiveFunction(i+1, x, final);
+		return final;
+	}
+}
+
+vector<int> printNos(int n) {
+	vector<int> ans;
+	ans = recursiveFunction(1, n, ans);
+	return ans;
+}
+
+int main() {
+    int n;
+    cin >> n;
+
+    vector<int> result = printNos(n);   // n = 3
+    
+    // Print the final array after the recursion into the result vector
+    for (int a : result) {
+        cout << a << " ";
+    }
+
+    return 0;
+}
+	
