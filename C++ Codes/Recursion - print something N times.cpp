@@ -255,7 +255,7 @@ void recursiveFucntion(int x, vector<int> &final) {
 	if(x == 0)
 		return;
 	else {
-		// final.push_back(x); ->  ei line age dile ulta print {3,2,1} evabe print hobe. pore tokhon sort kore dilei hobe
+		// final.push_back(x);  -->  ei line age dile ulta print {3,2,1} evabe print hobe. pore tokhon sort kore dilei hobe
 		recursiveFucntion(x-1, final);
 		final.push_back(x);
 	}
