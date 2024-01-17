@@ -111,8 +111,9 @@ vector<int> printNos(int x) {
 		return vector<int>();  /* This line creates and returns an empty vector<int>. Essentially, it means that when the value of x becomes 0, the recursion stops, and an empty vector is returned */
 	else {
 		vector<int> ans = printNos(x-1);   // In a recursive function, you typically want to capture the result of the recursive call because it contributes to building the final result.
-		ans.push_back(x);
-		return ans;
+		ans.push_back(x);   /* Ei problem e, i = 1 diye na kore jokhon x = 4 diye recursion korbo tokhon printNos(x-1) ei line er pore ei ans.push_back(x) likhbo mane pore x add korbo vector e karon recursion er jonno jokhon backtracking hobe tokhon age printNos(1) theke shuru hobe and 1 add hobe, pore 2,3.... erokom
+		                       Ar i = 1 diye korle ans.push_back(i) ei line ta printNos(1, n) er age hobe mane age 1 add korbo vector e karon backtracking jokhon hobe tokhon printNos(1, n) theke shuru hobe ar backtracking howar agei toh amra add kore niyechilam mane line ta printNos() er age likhechilam
+                return ans;
 	}
 }
 
@@ -247,6 +248,7 @@ int main() {
 
 // Solution 5 -> FULL CODE:
 
+// (i) -->
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -278,5 +280,46 @@ int main() {
     for (int a : result) {
         cout << a << " ";
     }
+    return 0;
+}
+
+
+
+
+// <--------------Another way : --------------->
+
+// (ii) -->
+#include <bits/stdc++.h>
+#include <vector>
+using namespace std;
+
+void recursiveFucntion(int x, vector<int> &final) {
+	if(x == 0)
+		return;
+	else {
+		final.push_back(x);
+		recursiveFucntion(x-1, final);    // {4, 3, 2, 1}
+	}
+	sort(final.begin(), final.end());    // {1, 2, 3, 4}
+}
+
+vector<int> printNos(int n) {
+	vector<int> ans;
+	recursiveFucntion(n, ans);
+	return ans;
+}
+
+int main() {
+    int n;
+    cin >> n;
+    
+    vector<int> result;
+    result = printNos(n);   // n = 3
+    
+    // Print the final array after sorting
+    for (int a : result) {
+        cout << a << " ";
+    } cout << endl;
+
     return 0;
 }
