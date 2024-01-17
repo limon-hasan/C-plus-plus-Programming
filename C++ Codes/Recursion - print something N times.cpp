@@ -240,3 +240,43 @@ int main() {
     return 0;
 }
 	
+
+
+// -----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Solution 5 -> FULL CODE:
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void recursiveFucntion(int x, vector<int> &final) {
+	if(x == 0)
+		return;
+	else {
+		// final.push_back(x); ->  ei line age dile ulta print {3,2,1} evabe print hobe. pore tokhon sort kore dilei hobe
+		recursiveFucntion(x-1, final);
+		final.push_back(x);
+	}
+}
+
+vector<int> printNos(int n) {
+	vector<int> ans;
+	recursiveFucntion(n, ans);
+	return ans;
+}
+
+int main() {
+    int n;
+    cin >> n;
+    
+    vector<int> result;
+    result = printNos(n);   // n = 3
+    
+    // Print the final array after the recursion into the result vector
+    for (int a : result) {
+        cout << a << " ";
+    }
+    return 0;
+}
