@@ -216,7 +216,7 @@ vector<int> recursiveFunction(int i, int x, vector<int> &final) {
 	else {
 		final.push_back(i);
 		recursiveFunction(i+1, x, final);
-		return final;
+		return final;   // return final na diye  "return recursiveFunction(i+1, x, final); " dileo hoto
 	}
 }
 
