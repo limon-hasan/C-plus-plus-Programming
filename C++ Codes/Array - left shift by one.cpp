@@ -1,4 +1,6 @@
-// left array shifting by one position
+//  https://bit.ly/3ZeXGrO
+// left array shifting by one position 
+
 // Time Complexity : O(n)
 // Space complexity : The extra space i am using is O(1) and but in order to solve this problem I am using this array so if you have to take space into consideration fot the algorithm pariticularly I will say i am using this array so thereby O(n) is being used. It is already given it to me but i am using it in order to solve it   
 
