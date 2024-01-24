@@ -1,4 +1,7 @@
-// Array left shifting by one position
+// left array shifting by one position
+// Time Complexity : O(n)
+// Space complexity : The extra space i am using is O(1) and but in order to solve this problem I am using this array so if you have to take space into consideration fot the algorithm pariticularly I will say i am using this array so thereby O(n) is being used. It is already given it to me but i am using it in order to solve it   
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -7,6 +10,11 @@ vector<int> rotateArray(vector<int> &arr, int n) {
     for(int i = 1; i < n; i++) {
         arr[i - 1] = arr[i];
     }
+    /* Evabeo loop chalaleo hoy
+    for(int i = 0; i < n - 1; i++) {
+        arr[i] = arr[i + 1];
+    }
+    */
     arr[n-1] = temp;
     return arr;
 }
