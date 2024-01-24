@@ -1,4 +1,4 @@
-// left array shifting by one position
+// Array left shifting by one position
 #include <bits/stdc++.h>
 using namespace std;
 
