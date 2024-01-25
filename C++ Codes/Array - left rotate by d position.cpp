@@ -1,16 +1,17 @@
 // left rotate array by three position
 // Brute-force approach
 
+// Time Complexity --> O(k) + O(n - k) + O(k) = O(n + k) 
+// Space Complexity --> Extra space used will be O(k) because we are using a temporary array to store extra elements
 #include <bits/stdc++.h>
 using namespace std;
 
 vector<int> rotateArray(vector<int> &arr, int k)
 {
-
     int n = arr.size();
     // number of positions to rotate
     k = k % n;
-
+    
     vector<int> temp;
     // storing into temp vector
     for(auto i = 0; i < k; i++)
