@@ -26,10 +26,11 @@ vector<int> rotateArray(vector<int> &arr, int k) {
     	arr[i] = temp[i - (n - k)];
     }
 
-    /* uporer last loop ta evabeo lekha jay -> put them from temp into arr vector [without mathematical calculation]
+    /*  uporer last loop ta evabeo lekha jay -> put them from temp into arr vector [without mathematical calculation]
     int j = 0;
-    for(int i = d; i<n; i++) {
-        arr[i] = temp[j]	
+    for(int i = n - k; i<n; i++) {
+        arr[i] = temp[j];
+        j++;	
     }
     */
     return arr;
