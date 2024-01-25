@@ -18,19 +18,19 @@ vector<int> rotateArray(vector<int> &arr, int k)
     // storing into temp vector
     for(auto i = 0; i < k; i++)
     {
-        temp.push_back(arr[i]);
+        temp.push_back(arr[i]);   // temp = {1, 2, 3}
     }
 
     // shifting to arr vector
-    for(int i = k; i < n; i++)
+    for(int i = k; i < n; i++)   // i = k = 3
     {
-        arr[i - k] = arr[i];
+        arr[i - k] = arr[i];    // arr = {4, 5, 6, 7}  -->  Here, i-th index moves to the (i-k) index. For example --> arr = {1,2,3,4,5,6,7} ekhane left rotation by k = 3 position hole 3rd index(4)  0th index(3 -3 = 0) e ashbe, 4th index(5)  1st index(4 - 3 = 1) e ashbe
     }
 
     // put them from temp into arr vector [using mathematical calculation]
-    for(int i = n - k; i < n; i++)
+    for(int i = n - k; i < n; i++)   // i = n-k = 7-3 = 4
     {
-        arr[i] = temp[i - (n - k)];
+        arr[i] = temp[i - (n - k)];   // arr = {1, 2, 3} --> Here, if we subtract (n-k) from i then we get the indexes respectively 0,1,2 of temp vector which moves to the indexes 4,5,6 of arr vector
     }
 
     /*  uporer last loop ta evabeo lekha jay -> put them from temp into arr vector [without mathematical calculation]
@@ -48,7 +48,7 @@ int main()
     int n;
     cin >> n;
 
-    vector<int> arr;    // 1, 2, 3, 4, 5, 6, 7
+    vector<int> arr;    // {1, 2, 3, 4, 5, 6, 7}
     for(int i = 0; i<n; i++)
     {
         int value;
