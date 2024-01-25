@@ -1,3 +1,5 @@
+// Prblm link : https://www.codingninjas.com/studio/problems/rotate-array_1230543?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems&leftPanelTabValue=SOLUTION
+
 // left rotate array by three position
 // Brute-force approach
 
