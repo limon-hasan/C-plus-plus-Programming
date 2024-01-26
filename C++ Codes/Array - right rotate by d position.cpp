@@ -29,35 +29,35 @@ void rotate(vector<int>& nums, int k) {
 	}
 }
 
+/*
+void rotate(vector<int>& nums, int k) {
+int n = nums.size();
+if (n == 0) return;
 
-// void rotate(vector<int>& nums, int k) {
-// int n = nums.size();
-// if (n == 0) return;
+// Get the effective number of rotations:
+k = k % n;
 
-// // Get the effective number of rotations:
-// k = k % n;
+// checking if d is a multiple of n:
+if (k == 0) return;
 
-// // checking if d is a multiple of n:
-// if (k == 0) return;
+vector<int> temp(k); // temporary vector
 
-// vector<int> temp(k); // temporary vector
+// step 1: Copying last d elements into the temporary vector:
+for (int i = n - k; i < n; i++) {
+    temp[i - (n - k)] = nums[i];
+}
 
-// // step 1: Copying last d elements into the temporary vector:
-// for (int i = n - k; i < n; i++) {
-//     temp[i - (n - k)] = nums[i];
-// }
+// step 2: Shift first (n-d) elements to the right by d places in nums:
+for (int i = n - k - 1; i >= 0; i--) {
+    nums[i + k] = nums[i];
+}
 
-// // step 2: Shift first (n-d) elements to the right by d places in nums:
-// for (int i = n - k - 1; i >= 0; i--) {
-//     nums[i + k] = nums[i];
-// }
-
-// // step 3: Place the elements of the temporary vector in the first d places of nums:
-// for (int i = 0; i < k; i++) {
-//     nums[i] = temp[i];
-// }
-// }
-
+// step 3: Place the elements of the temporary vector in the first d places of nums:
+for (int i = 0; i < k; i++) {
+    nums[i] = temp[i];
+}
+}
+*/
 
 
 int main() {
