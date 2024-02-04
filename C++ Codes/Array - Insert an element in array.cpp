@@ -20,7 +20,6 @@ int main() {
 	int indx;
 	cin >> indx;    // 4
 
-
 	// storing elements from index 0 to particular (index-1) into temp[]
 	for (int i = 0; i < indx; i++) {
 		temp[i] = arr[i];    // {5, 6, 4, 7}
