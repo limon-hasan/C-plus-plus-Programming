@@ -1,4 +1,5 @@
 // Reverse an array
+// optimal approach
 
 #include <bits/stdc++.h>  
 using namespace std;
@@ -30,4 +31,34 @@ int main() {
                                                      //          4 9 3 6 2 
 	printArray(arr, 6);
 	printArray(brr, 5);
+}
+
+
+
+// -----------------------------------------------------------
+
+
+// Brute force approach
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int n;
+	cin >> n;
+	int arr[n], arr1[n];
+	for (int i = 0; i < n; i++) {
+		cin >> arr[i];
+	}
+	
+	int j = n - 1;
+	for(int i= 0; i< n; i++) {
+		arr1[i] = arr[j];
+		j--;
+	}
+
+	for(int i = 0; i<n; i++) {
+		cout << arr1[i] <<" ";
+	} cout << endl;
 }
