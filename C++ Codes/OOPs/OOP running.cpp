@@ -53,7 +53,7 @@ In a compiler using greedy alignment, the compiler would insert padding after th
 
 | a (1 byte) | padding (7 bytes) | b (8 bytes) | c (4 bytes) | padding (4 bytes) | d (4 bytes)
 
-total -> 32 bytes
+total size --> 32 bytes
 */
 
 int main() {
