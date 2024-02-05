@@ -74,4 +74,3 @@ int main() {
 
     cout << "Level is = " << himel.level << endl;
 }
-
