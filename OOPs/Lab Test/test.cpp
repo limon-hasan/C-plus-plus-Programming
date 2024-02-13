@@ -45,6 +45,29 @@ int main() {
 	p1.print();
 }
 
+/*  Output :
+
+Product 1 Information : 
+ID : 101
+Name : Laptop
+Price : $1200.5
+Quanitity in Stock : 10
+
+Product 2 Information : 
+ID : 102
+Name : Headphones
+Price : $50.75
+Quanitity in Stock : 50
+
+Updating stock for Product 1: +5 units
+
+Product 1 Information after update: 
+ID : 101
+Name : Laptop
+Price : $1200.5
+Quanitity in Stock : 15
+
+*/
 
 // ***************************************************************************************************************************************************************************
 
@@ -95,3 +118,28 @@ int main() {
 	cout << "Product " << "1" <<" Information "<< "after update: "<< endl;
 	p1.print();
 }
+
+
+/*  Output :
+
+Product 1 Information : 
+ID : 101
+Name : Laptop
+Price : $1200.5
+Quanitity in Stock : 10
+
+Product 2 Information : 
+ID : 102
+Name : Headphones
+Price : $50.75
+Quanitity in Stock : 50
+
+Updating stock for Product 1: +5 units
+
+Product 1 Information after update: 
+ID : 101
+Name : Laptop
+Price : $1200.5
+Quanitity in Stock : 15
+
+*/
