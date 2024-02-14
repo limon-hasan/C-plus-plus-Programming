@@ -35,3 +35,11 @@ int main() {
 	p1.cashIn(500);
 	p1.balance();
 }
+
+
+/*   Output: -->
+Total Balance = 5000
+Cashout = 1000
+Cash In = 500
+Total Balance = 4500
+*/
