@@ -34,7 +34,7 @@ public:
 	{      
 		cout << "Copy constructor called" << endl;
 		this->health = temp.health;  // copying one's object element into another object
-		this->level = temp.level;
+		this->level = temp.level;  // when you access members of an object via a reference, you use the dot operator (.), not the arrow operator (->).
     } 
 
 	void print() {
