@@ -1,4 +1,49 @@
-// First example :-->
+// Static function
+// It doesnot need to create object to call
+// It doesnot have "this" keyword
+// static fucntion can only access static functions
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Hero {
+
+private:
+	int health;
+
+public:
+	char level;
+	char *name;
+
+	static int timeToComplete;  // "timeToComplete" is a static member
+    
+	// Default cosntructor
+	Hero() {
+		cout << "Simple Constructor called" << endl;
+		name = new char[100];  // dynamically allocated in the heap, not statically
+	}
+
+    // static function
+    static int random() {
+		return timeToComplete;
+
+	}
+
+   	~Hero() {
+		cout << "Destructor called" << endl; 
+	}
+};
+
+int Hero :: timeToComplete = 2;   // "::" this is called scope resolution operator 
+
+int main() {
+	cout << Hero::random() << endl;
+}
+
+
+// -----------------------------------------------------------------------
+
+// First example :-->  Geeks for geeks
 #include <iostream>  
 using namespace std; 
 
