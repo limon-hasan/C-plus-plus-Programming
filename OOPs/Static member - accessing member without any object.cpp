@@ -1,5 +1,4 @@
-
-// Accessing static member without an object
+// Accessing static member without any object
 #include <iostream>
 using namespace std;
 
