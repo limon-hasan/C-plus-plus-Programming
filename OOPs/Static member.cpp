@@ -92,7 +92,7 @@ int main()
 	B b1, b2, b3;
 	A a = b1.getA();  // Here, A is the class type, and a is the variable name.  We are declaring a variable a of type A and initializing it with the value returned by b1.getA().
 
-    A z = b3.getA();
+        A z = b3.getA();
 	A y = b2.getA();
 	
 }
