@@ -17,8 +17,9 @@ public:
 	}
 
     void setName(char name[]) {
+	        // I can write this way as well  --> "this->name = name"
 		strcpy(this->name, name);  /* If there two variables like strings and i want to copy one to another then  have to use "strcpy", I cannot use or write like this "this-name = name"
-		                           but When dealing with integers or other primitive data types, direct assignment or copying is typically sufficient and safe, as there's no concern for null termination or buffer overflows like there is with character arrays.  */
+		                              but When dealing with integers or other primitive data types, direct assignment or copying is typically sufficient and safe, as there's no concern for null termination or buffer overflows like there is with character arrays.  */
 	}
     
 	void print() {
