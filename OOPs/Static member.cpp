@@ -39,11 +39,11 @@ int main() {
 	cout << Hero :: timeToComplete << endl;  // prints 2
 
 	Hero a;  // Simple Constructor called
-	cout << a.timeToComplete << endl;  // 2
+	cout << a.timeToComplete << endl;  // 2   // It is not good practice
 
 	Hero B;  // Simple Constructor called
 	B.timeToComplete = 10;
-	cout << a.timeToComplete << endl;   // 10
+	cout << a.timeToComplete << endl;   // 10    // It is not good practice
 	cout << B.timeToComplete << endl;  // 10
 
 }
