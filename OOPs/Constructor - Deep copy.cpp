@@ -86,13 +86,15 @@ int main() {
 	hero1.setLevel('D');
 	char name[6] = "Limon";
 	hero1.setName(name);
-	hero1.print();
+	hero1.print();  // [ Name: Limon, Health: 12, Level: D ]
+
 
 	// Deep copying  --> In deep copy, we created entirely two dfferent array
 	Hero hero2(hero1);  // I can write this as well --> Hero hero2 = hero1
-	hero2.print();
+	hero2.print();  // [ Name: Limon, Health: 12, Level: D ]
 
 	hero1.name[0] = 'K';
-	hero1.print();
-	hero2.print();
+	
+	hero1.print();   // [ Name: Kimon, Health: 12, Level: D ]
+	hero2.print();   // [ Name: Limon, Health: 12, Level: D ]
 }
