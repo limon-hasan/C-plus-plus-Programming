@@ -73,6 +73,7 @@ int main() {
 	// use default copy constructor --> Default copy constructor will always do shallow copy 
 	//  As we create default copy constructor then we have to remove our own copy constructor created in the class  
 	// In shallow copy, we access same memory address
+	
 	Hero hero2(hero1);  // I can write this as well --> Hero hero2 = hero1
 	hero2.print();
 
