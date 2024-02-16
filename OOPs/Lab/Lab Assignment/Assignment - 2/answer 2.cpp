@@ -46,6 +46,16 @@ int main() {
     return 0;
 }
 
+/*
+Output : -->
+Account 1 created with balance 0
+Account 2 created with balance 5000
+Deposit: 1: 1500. New Balance: 1500
+Withdrawal 1: 800. New Balance: 700
+
+Deposit: 2: 400. New Balance: 5400
+Withdrawal 2: 600. New Balance: 4800
+*/
 
 
 // --------------------------------------------------------------------------------------------
