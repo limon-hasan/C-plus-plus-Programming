@@ -33,3 +33,46 @@ int main() {
 	cout << "Book " << z <<" ";
 	delete b2; 
 }
+
+
+// ---------------------------------------------------------------
+
+
+
+// Or, 
+// statically creating objects
+#include <bits/stdc++.h>
+using namespace std;
+
+class Book {
+
+    private:
+    string title;
+    string author;
+    string ISBN;
+
+    public:
+    static int count; // this can be declared in private also  // Static counter to keep track of created books
+    Book(string title, string author, string ISBN) : title(title), author(author), ISBN(ISBN) {
+        count++;
+        cout << "Book " << count << " " << "created" << endl;
+    }
+
+    ~Book() {
+        count--;
+        cout << "Book " << count  <<" "<< "destroyed" << endl;
+        count++;  // // Decrement count when a book is destroyed
+    } 
+};
+
+int Book :: count = 0;   // Initialize static count
+
+int main() {
+
+    //  Statically creating book objects
+    Book book1("Introduction to OOP", "John Doe", "123456789");
+    Book book2("Data Structures and Algorithms", "Jane Smith", "987654321");
+
+    // No need to explicitly delete book objects in C++, they will be automatically destroyed when they go out of scope. Because here, objects created statically 
+    return 0;
+}
