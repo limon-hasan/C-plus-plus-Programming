@@ -34,6 +34,13 @@ int main() {
 	delete b2; 
 }
 
+/*
+Output -->
+Book 1 created
+Book 2 created
+Book 1 destroyed
+Book 2 destroyed
+*/
 
 // ---------------------------------------------------------------
 
