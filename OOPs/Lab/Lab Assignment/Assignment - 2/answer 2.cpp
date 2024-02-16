@@ -24,12 +24,12 @@ class Account {
 
     void deposit(int amount, int p) {
         balance = balance + amount;
-         cout <<"Deposit: " << p <<": "<< amount << ". " << "New Balance: " << balance << endl;    // Deposit 1: 1500. New Balance: 1500  / Deposit 2: 400. New Balance: 5400
+         cout <<"Deposit: " << p <<": "<< amount << ". " << "New Balance: " << balance << endl;    // Deposit 1: 1500. New Balance: 1500  //  Deposit 2: 400. New Balance: 5400
     }
 
     void withdrawal(int amount, int q) {
         balance = balance - amount;
-        cout <<"Withdrawal "<< q <<": " << amount << ". " << "New Balance: " << balance << endl << endl;  // Withdrawal 1: 800. New Balance: 700
+        cout <<"Withdrawal "<< q <<": " << amount << ". " << "New Balance: " << balance << endl << endl;  // Withdrawal 1: 800. New Balance: 700  // Withdrawal 2: 600. New Balance: 4800
     }
 };
 
