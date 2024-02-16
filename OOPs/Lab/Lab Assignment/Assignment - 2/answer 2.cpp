@@ -12,24 +12,24 @@ class Account {
         accountNumber = accountNo2;
         accountHolder = accountH2;
         balance = blnc2;
-        cout << "Account 2 created with balance " << balance << endl;
+        cout << "Account 2 created with balance " << balance << endl;  // Account 2 created with balance 5000
     }
 
     Account(int accountNo1, string accountH1) {
         accountNumber = accountNo1;
         accountHolder = accountH1;
         balance = 0;
-        cout << "Accoutn 1 created with balance " << balance << endl;
+        cout << "Accoutn 1 created with balance " << balance << endl;  // Account 1 created with balance 0
     }
 
-    void deposit(int amount) {
+    void deposit(int amount, int p) {
         balance = balance + amount;
-        cout <<"Deposit 1: " << amount << ". " << "New Balance: " << balance << endl;
+         cout <<"Deposit: " << p <<": "<< amount << ". " << "New Balance: " << balance << endl;    // Deposit 1: 1500. New Balance: 1500  / Deposit 2: 400. New Balance: 5400
     }
 
-    void withdrawal(int amount) {
+    void withdrawal(int amount, int q) {
         balance = balance - amount;
-        cout <<"Withdrawal 1: " << amount << ". " << "New Balance: " << balance;
+        cout <<"Withdrawal "<< q <<": " << amount << ". " << "New Balance: " << balance << endl << endl;  // Withdrawal 1: 800. New Balance: 700
     }
 };
 
@@ -37,8 +37,11 @@ class Account {
 int main() {
     Account a1(1001, "Alice");
     Account a2(1002, "Bob", 5000);
-    a1.deposit(1500);
-    a1.withdrawal(800);
+    a1.deposit(1500, 1);
+    a1.withdrawal(800, 1);
+
+    a2.deposit(400, 2);
+    a2.withdrawal(600, 2);
 
     return 0;
 }
