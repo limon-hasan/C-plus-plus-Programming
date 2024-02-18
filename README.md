@@ -16,6 +16,6 @@ If you have any cool C++ tricks, optimizations, or just want to share your own c
 
 ## About Me
 
-I'm a passionate student diving into the world of C++ programming. Join me on this journey as I explore various topics in C++ and work towards honing my coding skills. Let's have fun coding together!
+I'm a passionate learner diving into the world of C++ programming. Join me on this journey as I explore various topics in C++ and work towards honing my coding skills. Let's have fun coding together!
 
 Happy coding! 🚀
