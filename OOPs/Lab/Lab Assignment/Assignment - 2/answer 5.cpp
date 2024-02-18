@@ -35,3 +35,10 @@ int main() {
 
     return 0;
 }
+
+
+/*
+Sample Output:
+Employee 1 created with no salary.
+Employee 2 created with salary 5000. Annual Salary: 60000.
+*/
