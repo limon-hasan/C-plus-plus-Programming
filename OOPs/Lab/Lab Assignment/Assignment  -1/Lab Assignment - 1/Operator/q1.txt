@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int dividend = 15;
+    int divisor = 4;
+    int remainder = dividend % divisor;
+
+    cout << "Remainder of dividing " << dividend << " by " << divisor << " is: " << remainder << endl;
+
+    return 0;
+}

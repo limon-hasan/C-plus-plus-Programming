@@ -1,0 +1,33 @@
+#include <iostream>
+
+class Circle {
+private:
+    double radius;
+
+public:
+    // Constructor
+    Circle() : radius(0.0) {}
+
+    // Function to set the radius
+    void setRadius(double r) {
+        radius = r;
+    }
+
+    // Function to calculate the area of the circle
+    double calculateArea() {
+        return 3.141592653589793 * radius * radius;
+    }
+};
+
+int main() {
+    // Example usage of the Circle class
+    Circle myCircle;
+
+    // Set the radius
+    myCircle.setRadius(5.0);
+
+    // Calculate and print the area
+    std::cout << "Area of the circle with radius " << myCircle.calculateArea() << std::endl;
+
+    return 0;
+}

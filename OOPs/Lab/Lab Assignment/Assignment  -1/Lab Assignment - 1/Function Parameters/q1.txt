@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void printGreeting(const string& name, int age) {
+    cout << "Hello, " << name << "! You are " << age << " years old." << endl;
+}
+
+int main() {
+    string personName = "Alice";
+    int personAge = 25;
+
+    printGreeting(personName, personAge);
+
+    return 0;
+}

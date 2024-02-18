@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+float calculateTriangleArea(float base, float height) {
+    return 0.5 * base * height;
+}
+
+int main() {
+    float triangleBase = 5.0;
+    float triangleHeight = 8.0;
+
+    cout << "The area of the triangle with base " << triangleBase << " and height " << triangleHeight
+         << " is: " << calculateTriangleArea(triangleBase, triangleHeight) << endl;
+
+    return 0;
+}

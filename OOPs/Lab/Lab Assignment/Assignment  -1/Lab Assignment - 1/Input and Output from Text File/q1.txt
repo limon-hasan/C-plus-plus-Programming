@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    ofstream MyFile("input.txt");
+    MyFile << "Hello, this is line 1.\n";
+    MyFile << "This is line 2.\n";
+    MyFile << "And here comes line 3.\n";
+    MyFile.close();
+
+    string line;
+    ifstream MyReadFile("input.txt");
+
+    if (MyReadFile.is_open()) {
+        while (getline(MyReadFile, line)) {
+            cout << line << endl;
+        }
+        MyReadFile.close();
+    } else {
+        cerr << "Unable to open the file." << endl;
+    }
+
+    return 0;
+}

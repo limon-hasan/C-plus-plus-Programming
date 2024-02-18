@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 10; ++i) {
+        int multipleOfThree = 3 * i;
+        cout << "Multiple of 3 #" << i << ": " << multipleOfThree << endl;
+    }
+
+    return 0;
+}

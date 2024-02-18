@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int height;
+    double weight;
+    string eyeColor;
+
+    height = 175;
+    weight = 68.5;
+    eyeColor = "Brown";
+
+    cout << "Person's Information:" << endl;
+    cout << "Height: " << height << " cm" << endl;
+    cout << "Weight: " << weight << " kg" << endl;
+    cout << "Eye Color: " << eyeColor << endl;
+
+    return 0;
+}

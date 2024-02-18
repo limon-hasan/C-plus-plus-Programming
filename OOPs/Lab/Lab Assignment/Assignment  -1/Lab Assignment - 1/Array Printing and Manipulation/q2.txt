@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string fruits[3] = {"Apple", "Banana", "Cherry"};
+
+    // Printing the original array
+    std::cout << "Original Array: ";
+    for (const std::string& fruit : fruits) {
+        std::cout << fruit << ' ';
+    }
+    std::cout << std::endl;
+
+    // Changing a specific string in the array
+    fruits[1] = "Blueberry";
+
+    // Printing the modified array
+    std::cout << "Modified Array: ";
+    for (const std::string& fruit : fruits) {
+        std::cout << fruit << ' ';
+    }
+    std::cout << std::endl;
+
+    return 0;
+}

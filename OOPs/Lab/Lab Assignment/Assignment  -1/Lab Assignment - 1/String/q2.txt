@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string bookTitle = "The Catcher in the Rye";
+    string author = "J.D. Salinger";
+
+    string bookInfo = bookTitle + " by " + author;
+
+    cout << "Book Information: " << bookInfo << endl;
+
+    return 0;
+}

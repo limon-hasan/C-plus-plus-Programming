@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    bool isStudent;
+    int studentId;
+
+    isStudent = true;
+    studentId = 123456;
+
+    cout << "Student Information:" << endl;
+    cout << "Is Student: " << isStudent << endl;
+    cout << "Student ID: " << studentId << endl;
+
+    return 0;
+}

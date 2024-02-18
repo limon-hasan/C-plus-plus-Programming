@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int userInput;
+
+    while (true) {
+        cout << "Enter a number (or -1 to stop): ";
+        cin >> userInput;
+
+        if (userInput == -1) {
+            break;
+        }
+
+        cout << "You entered: " << userInput << endl;
+    }
+
+    cout << "Program stopped as -1 was entered." << endl;
+
+    return 0;
+}

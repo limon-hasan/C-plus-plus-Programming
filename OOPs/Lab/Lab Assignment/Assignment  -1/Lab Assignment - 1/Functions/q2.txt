@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+double calculateCircleArea(double radius) {
+    return M_PI * radius * radius;
+}
+
+int main() {
+    double radius = 3.5;
+    cout << "The area of a circle with radius " << radius << " is: " << calculateCircleArea(radius) << endl;
+
+    return 0;
+}

@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int integerVar = 42;
+    float floatVar = 3.14;
+    char charVar = 'A';
+
+    int *ptrInt = &integerVar;
+    float *ptrFloat = &floatVar;
+    char *ptrChar = &charVar;
+
+    cout << "Integer Variable: " << integerVar << ", Address: " << ptrInt << endl;
+    cout << "Float Variable: " << floatVar << ", Address: " << ptrFloat << endl;
+    cout << "Char Variable: " << charVar << ", Address: " << static_cast<void*>(ptrChar) << endl;
+
+    return 0;
+}

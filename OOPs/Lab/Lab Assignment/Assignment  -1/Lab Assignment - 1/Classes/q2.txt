@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+
+class Student {
+private:
+    std::string name;
+    int age;
+    double gpa;
+
+public:
+    // Constructor
+    Student(std::string studentName, int studentAge, double studentGPA)
+        : name(studentName), age(studentAge), gpa(studentGPA) {}
+
+    // Method to print student details
+    void printDetails() {
+        std::cout << "Name: " << name << ", Age: " << age << ", GPA: " << gpa << std::endl;
+    }
+};
+
+int main() {
+    // Example usage of the Student class
+    Student student1("Alice", 20, 3.5);
+
+    // Print student details
+    student1.printDetails();
+
+    return 0;
+}

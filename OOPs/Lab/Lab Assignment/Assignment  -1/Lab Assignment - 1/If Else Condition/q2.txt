@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int number1, number2;
+
+    cout << "Enter the first number: ";
+    cin >> number1;
+
+    cout << "Enter the second number: ";
+    cin >> number2;
+
+    if (number1 > number2) {
+        cout << "The first number is bigger." << endl;
+    } else if (number1 < number2) {
+        cout << "The second number is bigger." << endl;
+    } else {
+        cout << "Both numbers are equal." << endl;
+    }
+
+    return 0;
+}

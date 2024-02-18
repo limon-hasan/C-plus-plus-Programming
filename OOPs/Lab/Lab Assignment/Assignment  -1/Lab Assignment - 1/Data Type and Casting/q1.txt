@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    float floatingNumber = 7.8;  // Example float value
+    int integerNumber;
+
+    integerNumber = static_cast<int>(floatingNumber);  // Casting float to int
+
+    cout << "Floating Number: " << floatingNumber << endl;
+    cout << "Integer Number: " << integerNumber << endl;
+
+    return 0;
+}

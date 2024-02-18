@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int max(int a, int b) {
+    return (a > b) ? a : b;
+}
+
+int main() {
+    int num1 = 10, num2 = 7;
+    cout << "The larger of " << num1 << " and " << num2 << " is: " << max(num1, num2) << endl;
+    return 0;
+}

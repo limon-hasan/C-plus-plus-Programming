@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+double area(double length, double width) {
+    return length * width;
+}
+
+double area(double radius) {
+    return M_PI * pow(radius, 2);
+}
+
+int main() {
+    double rectangleLength = 5.0, rectangleWidth = 3.0;
+    double circleRadius = 2.5;
+
+    cout << "Area of Rectangle: " << area(rectangleLength, rectangleWidth) << endl;
+    cout << "Area of Circle: " << area(circleRadius) << endl;
+
+    return 0;
+}

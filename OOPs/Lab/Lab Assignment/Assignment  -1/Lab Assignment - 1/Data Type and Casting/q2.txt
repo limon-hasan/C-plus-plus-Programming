@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    double fractionalNumber = 9.7;
+    int integerPart = static_cast<int>(fractionalNumber);
+
+    cout << "Original Number: " << fractionalNumber << endl;
+    cout << "Integer Part: " << integerPart << endl;
+
+    return 0;
+}
