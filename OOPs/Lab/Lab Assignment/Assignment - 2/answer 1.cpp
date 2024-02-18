@@ -93,3 +93,11 @@ int main() {
     // No need to explicitly delete book objects in C++, they will be automatically destroyed when they go out of scope. Because here, objects created statically 
     return 0;
 }
+
+/*
+Sample Output:
+Book 1 created.
+Book 2 created.
+Book 1 destroyed.
+Book 2 destroyed.
+*/
