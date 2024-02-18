@@ -1,4 +1,13 @@
 // (5)  -->
+/*
+Qn : -->
+Problem 5: Employee Management System
+Create a class `Employee` with attributes `employeeID`, `name`, and `salary`. Implement a parameterized constructor to initialize these attributes.
+Overload the constructor to handle both with and without salary cases. Create a method to calculate and display the annual salary (12 times the monthly salary).
+Sample Input:
+Employee 1: Employee ID - 001, Name - "John"
+Employee 2: Employee ID - 002, Name - "Jane", Salary - 5000
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
