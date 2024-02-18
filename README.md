@@ -10,15 +10,6 @@ Hey there! Welcome to my C++ Programming repository. This is where I dump all so
 
 Feel free to explore the code and play around with it. Don't hesitate to suggest improvements or point out mistakes if you spot any. Learning is a journey, and I'm happy to have you along for the ride!
 
-## How to Use
-
-1. Clone the repository to your local machine:
-
-2. Navigate to the directory:
-
-3. Explore the folders and files to find the code you're interested in.
-
-4. You can compile and run the code using your preferred C++ compiler.
 
 ## Contributing
 
