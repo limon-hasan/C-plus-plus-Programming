@@ -1,4 +1,4 @@
-## Welcome to My C++ Learning Journey!
+# Welcome to My C++ Learning Journey!
 
 Hey there! Welcome to my C++ Programming repository. This is where I store various C++ code snippets as I continue to learn and experiment with different concepts, covering a range of topics from basics to more advanced ones.
 
