@@ -6,7 +6,7 @@ Hey there! Welcome to my C++ Programming repository. This is where I store vario
 
 - **C++ OOP:** Object-Oriented Programming in C++
 - **C++ STL:** Standard Template Library examples and experiments
-- **Miscellaneous C++ Code:** Various C++ code snippets, projects, and experiments
+- **Miscellaneous C++ Code:** Various C++ code snippets and experiments
 
 Feel free to explore the code and play around with it. Don't hesitate to suggest improvements or point out mistakes if you spot any. Learning is a journey, and I'm happy to have you along for the ride!
 
