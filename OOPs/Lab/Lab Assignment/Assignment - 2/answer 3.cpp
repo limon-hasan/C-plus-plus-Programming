@@ -1,3 +1,12 @@
+/* Qn : ->
+Problem 3: Student Information System
+Create a class `Student` with attributes `rollNumber`, `name`, and `marks`. Implement aparameterized constructor to initialize these attributes. Overload the constructor to handle both
+with and without marks cases. Display the grade of the student based on the marks (A, B, C, D,or F).
+Sample Input:
+Student 1: Roll Number - 101, Name - "Tom"
+Student 2: Roll Number - 102, Name - "Lisa", Marks - 75
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
