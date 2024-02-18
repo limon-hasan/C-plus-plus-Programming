@@ -37,3 +37,9 @@ int main() {
 
     return 0;
 }
+
+/*
+Sample Output:
+Car 1 created with no rental fee.
+Car 2 created with rental fee 50. Rental Fee: 50.
+    */
