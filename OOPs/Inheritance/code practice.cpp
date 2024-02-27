@@ -2,7 +2,6 @@
 using namespace std;
 
 class Moneybag {
-
 public:
 	int total = 0;
 
@@ -12,7 +11,6 @@ public:
 };
 
 class Salami : public Moneybag {
-
 public:
 	int Extra;
 	void given() {
@@ -25,7 +23,6 @@ public:
 };
 
 class Tour : public Moneybag {
-
 public:
 	int cost = 500;
 	void costt() {
