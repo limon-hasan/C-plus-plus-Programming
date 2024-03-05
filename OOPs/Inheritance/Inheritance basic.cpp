@@ -53,7 +53,7 @@ int main() {
  	cout << object1.age <<endl;  // 0 (garbage value)
  	cout << object1.height << endl;  // 0 (garbage value)
  	cout <<"Weight is: "<< object1.weight << endl;  // 0 -> garbage value
-    cout <<"Age is : " << object1.getAge() << endl;  // Age is : 0
+   	cout <<"Age is : " << object1.getAge() << endl;  // Age is : 0
 
  	// cout << object1.color << endl;  // It shows blank space because i didn't initialize string at first
  	object1.setWeight(59);  // set the new weight in setWeight function
