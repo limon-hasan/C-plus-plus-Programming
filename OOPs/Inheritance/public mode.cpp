@@ -1,8 +1,5 @@
 // Inheritance - public mode
 
-// But in this case, the data member in public of super class can only be accessible inside this own class and the child class also but not outside the super class
-// But, the data member in public of child class can be accessible inside this child class and outside the child class
-
 #include <iostream>
 using namespace std;
 
