@@ -28,10 +28,9 @@ class Product {
 	void update(int y, int z) {
 		cout << "Updating stock for Product "<< y <<": " << "+" << z <<" "<< "units" << endl << endl; 
 		quantityInStock = quantityInStock + z;
-	    cout << "Product " << y <<" Information "<< "after update: "<< endl;
+	    	cout << "Product " << y <<" Information "<< "after update: "<< endl;
 	} 
 };
-
 
 int main() {
 	Product p1(101, "Laptop", 1200.50, 10);
