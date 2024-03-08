@@ -1,3 +1,5 @@
+// Write the code based on the following output : 
+
 // process - 1
 #include <bits/stdc++.h>
 using namespace std;
