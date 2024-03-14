@@ -1,7 +1,7 @@
 // C++ File Handling
 
 #include <iostream>
-#include <fstream>
+#include <fstream>  // header file to include classes for reading and writing in the file
 /*
 The useful classes for working with files in C++ are :
 1. fstreambase
