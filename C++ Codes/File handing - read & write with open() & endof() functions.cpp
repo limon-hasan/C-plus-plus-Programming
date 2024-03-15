@@ -29,7 +29,7 @@ int main() {
     // this above lines will be printed in this way as well
     string s;
     
-    // Check if the end-of-file flag is set to false(0) 
+    // Check if the end-of-file flag is set to false(0)  --> eof() function returns true(1) when the end of the file has been reached, and false(0) otherwise
     while(in.eof() == 0)   // while(in) --> This line could be written like this as well
     {
         // in >> st;
