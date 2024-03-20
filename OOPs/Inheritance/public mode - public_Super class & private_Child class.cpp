@@ -14,7 +14,7 @@ public:
 	int height;
 	int weight;
 	int roll = 10;
-	int Debate = 220;
+	int debate = 220;
 	int health = 44;
 
 	Human() {
@@ -47,8 +47,8 @@ public:
 	Male() {
 		cout << "HELLO" << endl;
 		cout << "Age is : " << this->age << endl;
-		Debate = 188;
-		cout <<"Debate is: " << Debate << endl;
+		debate = 188;
+		cout <<"Debate is: " << debate << endl;
 	}
 
 	void setColor(string color) {
