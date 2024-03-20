@@ -25,9 +25,15 @@ public:
 		return this->age;
 	}
 
-	void setWeight(int w) {
-		this->weight = w;
+	void printing(int y) {
+		height = y;
+		cout <<"OKAY, now Height is: " << height<< endl;
 	}
+
+	Human(int y) {
+		cout << "Number is " << y << endl;
+	}
+
 };
 
 class Male : protected Human {
@@ -39,13 +45,21 @@ public:
 		cout <<"HELLO" << endl;
 	}
 
-	void sleep() {
-		cout <<"Male sleeping " << endl;
+	void print() {
+		printing(22);
+	}
+
+	Male(int x) {
+		height = x;
+		cout << "height is: " << height << endl;  //  Here, though 'height' become the protected member of the child(Male) class, it can be accessible in the child class because it member inheriting protectedly can be acessible in the child class but not in the case of inheriting privately  
 	}
 };
 
 int main() {
-
-	Male m1;
-	cout <<"Height is: "<< m1.height << endl;  // This will show a compilation error because height is declared protected there in the child class
+    
+    Human h1(90);  // prints -->  "Number is 90"
+	Male m1;   // called the parent class(Human) constructor first and then call the own constructor and prints "HI. Weight is: 48. HELLO " --> these three lines
+	m1.print();  // prints "OKAY, now Height is: 22"
+	Male m2;  // called the parent class(Human) constructor first and then call the own constructor and prints "HI. Weight is: 268501009. HELLO "
+	Male m3(45);   // prints "height is: 45"
 }
