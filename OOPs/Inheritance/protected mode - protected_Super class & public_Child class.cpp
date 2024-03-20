@@ -1,6 +1,6 @@
-// Inheritance - Super class is in protected mode
+// Inheritance - memebr of the Super class is in protected mode
 
-// When super class is in protected mode and the child class inherits it from publicly, the member of the super class will become protected inside the child class and they will be accessible wihtin the super class and the child class but not be accessible outside the super and child class
+// When the member of the super class is in protected mode and the child class inherits it from publicly, the member of the super class will become protected inside the child class and they will be accessible wihtin the super class and the child class but not be accessible outside the super and child class
 
 
 #include <iostream>
@@ -10,7 +10,7 @@ class Human {
 
 private:
 	int age;
-protected:
+protected:   // protected mode
 	int height;
 public:
 	int weight;
