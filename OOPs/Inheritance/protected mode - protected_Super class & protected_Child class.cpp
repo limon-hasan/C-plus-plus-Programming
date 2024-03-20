@@ -1,7 +1,8 @@
 // Inheritance - member of Super class is in protected mode
 
-// When the member of super class is in protected mode and the child class inherits it from protectedly, the member of the super class will become protected inside the child class and they will be accessible inside the super class and the child class as well but they not be accessible outside the super and child class
-
+/* When the member of super class is in protected mode and the child class inherits it from protectedly, 
+the member of the super class will become protected inside the child class and they will be accessible inside the super class and the child class as well but they not be accessible outside the super and child class
+*/
 
 #include <iostream>
 using namespace std;
@@ -51,7 +52,8 @@ public:
 
 	Male(int x) {
 		height = x;
-		cout << "height is: " << height << endl;  //  Here, though 'height' become the protected member of the child(Male) class, it can be accessible in the child class because it member inheriting protectedly can be acessible in the child class but not in the case of inheriting privately  
+		cout << "height is: " << height << endl;  /*  Here, though 'height' become the protected member of the child(Male) class, it can be accessible in the child class 
+		                                              because it member inheriting protectedly can be acessible in the child class but not in the case of inheriting privately  */
 	}
 };
 
