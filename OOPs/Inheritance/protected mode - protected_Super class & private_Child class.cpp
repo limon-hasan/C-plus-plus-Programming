@@ -60,7 +60,7 @@ public:
 
   /*    Error showing --> 
 	void print3(int p) {
-		age = p;  // here, age is a private member that's why it cannot be accsessible in the child class
+		age = p;  // here, age is a private member of the parent(human) class and it remains private in the child(male) class that's why it cannot be accsessible in the child class
 		cout << "Age is: " << age << endl;  // It will show a compilation error because of private member(age)
 	}   */
 };
