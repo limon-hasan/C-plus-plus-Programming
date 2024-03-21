@@ -58,7 +58,7 @@ public:
 		cout << "Now, Height is: " << height << endl;
 	}
 
-  /*   Error showing --> 
+  /*    Error showing --> 
 	void print3(int p) {
 		age = p;  // here, age is a private member that's why it cannot be accsessible in the child class
 		cout << "Age is: " << age << endl;  // It will show a compilation error because of private member(age)
@@ -67,7 +67,7 @@ public:
 
 int main() {
     
-    Human h1(90);  // prints -->  "Number is 90"
+    	Human h1(90);  // prints -->  "Number is 90"
 	Male m1;   // called the parent class(Human) constructor first and then call the own constructor and prints "HI. Weight is: 48. HELLO " --> these three lines
 	m1.print();  // prints "OKAY, now Height is: 22"
 	Male m2;  // called the parent class(Human) constructor first and then call the own constructor and prints "HI. Weight is: 268501009. HELLO "
