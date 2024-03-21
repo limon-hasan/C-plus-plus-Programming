@@ -43,7 +43,7 @@ public:
 	void print(int p) {
 		age = p;
 		cout << "Now, age is: " << age << endl;  // this will show compilation error --> because 'age' is a private member in the parent(Human) class that's why it cannot be accessible directly in the child(Male) class
-	}
+	}                                               // private members of a parent class cannot be directly accessed in a child class
 };
 
 int main() {
