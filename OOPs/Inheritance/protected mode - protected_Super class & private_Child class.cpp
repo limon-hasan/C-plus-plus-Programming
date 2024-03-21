@@ -9,11 +9,11 @@ using namespace std;
 
 class Human {
 
-public:
+private:
 	int age;
-// protected:
+protected:
 	int height;
-// protected:
+public:
 	int weight = 9;
 public:
 	Human() {
