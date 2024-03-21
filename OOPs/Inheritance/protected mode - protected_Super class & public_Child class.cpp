@@ -8,7 +8,7 @@ using namespace std;
 
 class Human {
 
-private:
+protected:   // protected mode
 	int age;
 protected:   // protected mode
 	int height;
@@ -42,10 +42,16 @@ public:
 	void sleep() {
 		cout <<"Male sleeping " << endl;
 	}
+
+	void print(int p) {
+		age = p;
+		cout << "Now, age is: " << age << endl;
+	}
 };
 
 int main() {
 
 	Male m1;
 	cout <<"Height is: "<< m1.height << endl;  // This will show a compilation error because height is declared protected there in the child class
+        m1.print();
 }
