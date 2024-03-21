@@ -8,6 +8,8 @@ In the child(Male) class, you've used protected inheritance, which means all pub
 and all protected and private members remain protected and private, respectively.
 */
 
+//  protected members of a parent class are accessible directly in the child class and the parent class also.
+
 #include <iostream>
 using namespace std;
 
