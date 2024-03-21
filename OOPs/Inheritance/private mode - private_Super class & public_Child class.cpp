@@ -1,7 +1,7 @@
 // Inheritance - memebr of the Super class is in private mode
 
 // When the member of the super class is in private mode and the child class inherits it from publicly, private member will remain private within the child(Male) class and they will be accessible wihtin the super class and the child class but not be accessible outside the super and child class
-// In C++, private members of a parent class cannot be directly accessed in a child class
+// In C++, private members of a parent class cannot be directly accessed in a child class, regardless of the type of inheritance used (public, protected, or private).
 
 #include <iostream>
 using namespace std;
