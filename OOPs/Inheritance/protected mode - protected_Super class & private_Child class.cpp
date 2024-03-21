@@ -4,6 +4,8 @@
 the member of the super class will become private inside the child class and they will be accessible inside the super class and the child class as well but they not be accessible outside the super and child class
 */
 
+//  protected members of a parent class are accessible directly in the child class and the parent class also.
+
 #include <iostream>
 using namespace std;
 
