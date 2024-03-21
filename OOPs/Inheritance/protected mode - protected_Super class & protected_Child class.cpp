@@ -4,7 +4,7 @@
 the member of the super class will become protected inside the child class and they will be accessible inside the super class and the child class as well but they not be accessible outside the super and child class. 
 
 
-In the Male class, you've used protected inheritance, which means all public members of Human become protected in Male,
+In the child(Male) class, you've used protected inheritance, which means all public members of parent(Human) class become protected in child(Male),
 and all protected and private members remain protected and private, respectively.
 */
 
