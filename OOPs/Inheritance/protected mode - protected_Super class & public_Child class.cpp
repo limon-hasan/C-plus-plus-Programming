@@ -1,7 +1,7 @@
 // Inheritance - memebr of the Super class is in protected mode
 
 // When the member of the super class is in protected mode and the child class inherits it from publicly, the member of the super class will become protected inside the child class and they will be accessible wihtin the super class and the child class but not be accessible outside the super and child class
-
+//  protected members of a parent class are accessible directly in the child class.
 
 #include <iostream>
 using namespace std;
