@@ -76,7 +76,6 @@ int main() {
 	// m1.smart();   // It will show error because printing() is a member function of parent class but we inherit it in the child class privately 
 	m1.print2(178);
 	// m1.print3(111); 
-	m1.printing(65);
-	// h1.printing(23);   // It will also show error because printing() is a member function of parent class but we inherit it in the child class privately 
-
+	m1.printing(65);   // It will also show error because printing() is a member function of parent class but we inherit it in the child class privately 
+	// h1.printing(23);   
 }
