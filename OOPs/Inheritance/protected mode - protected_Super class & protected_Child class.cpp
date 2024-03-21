@@ -61,6 +61,11 @@ public:
 		cout << "height is: " << height << endl;  /*  Here, though 'height' become the protected member of the child(Male) class, it can be accessible in the child class 
 		                                              because it member inheriting protectedly can be acessible in the child class but not in the case of inheriting privately  */
 	}
+
+	void print1(int p) {
+		height = p;
+		cout <<"Finally, Height is: " << height << endl;
+	}
 };
 
 int main() {
@@ -70,4 +75,5 @@ int main() {
 	m1.print();  // prints "OKAY, now Height is: 22"
 	Male m2;  // called the parent class(Human) constructor first and then call the own constructor and prints "HI. Weight is: 268501009. HELLO "
 	Male m3(45);   // prints "height is: 45"
+	m1.print1(33);
 }
