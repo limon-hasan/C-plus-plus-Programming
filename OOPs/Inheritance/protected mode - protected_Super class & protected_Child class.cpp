@@ -1,7 +1,10 @@
 // Inheritance - member of Super class is in protected mode
 
 /* When the member of super class is in protected mode and the child class inherits it from protectedly, 
-the member of the super class will become protected inside the child class and they will be accessible inside the super class and the child class as well but they not be accessible outside the super and child class
+the member of the super class will become protected inside the child class and they will be accessible inside the super class and the child class as well but they not be accessible outside the super and child class. 
+
+
+In the Male class, you've used protected inheritance, which means all public members of Human become protected in Male, and all protected and private members remain protected and private, respectively.
 */
 
 #include <iostream>
