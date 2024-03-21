@@ -8,19 +8,19 @@ using namespace std;
 class Human {
 
 private:
-	  int age;
-protected:   
-	  int height;
+	int age;
+protected:
+	int height;
 public:
-	  int weight;
+	int weight;
 
 public:
-	  Human() {
-		cout <<"HI" << endl;
-		cout << "Weight is: "<< this->weight << endl;
+	Human() {
+		cout << "HI" << endl;
+		cout << "Weight is: " << this->weight << endl;
 	}
 
-	  int getAge() {
+	int getAge() {
 		return this->age;
 	}
 };
@@ -28,18 +28,18 @@ public:
 class Male : public Human {
 
 public:
-	  string color;
+	string color;
 
-	  Male() {
-		cout <<"HELLO" << endl;
-	  }
+	Male() {
+		cout << "HELLO" << endl;
+	}
 
-	  void sleep() {
-		cout <<"Male sleeping " << endl;
-	  }
+	void sleep() {
+		cout << "Male sleeping " << endl;
+	}
 
-    // This following part shows error :-->
-	  void print(int p) {
+	// This following part shows error :-->
+	void print(int p) {
 		age = p;
 		cout << "Now, age is: " << age << endl;  // this will show compilation error --> because 'age' is a private member in the parent(Human) class that's why it cannot be accessible directly in the child(Male) class
 	}
@@ -47,13 +47,13 @@ public:
 
 int main() {
 
-	  Male m1;
-	  // cout <<"Height is: "<< m1.height << endl;  // This will show a compilation error because height is declared protected there in the child class
+	Male m1;
+	// cout <<"Height is: "<< m1.height << endl;  // This will show a compilation error because height is declared protected there in the child class
 
-	  // cout << m1.age << endl;   // this will show compilation error
-    Human h1;
-	  cout << "Age is: " << h1.getAge() << endl;  // Age is: 32759
-	  cout << "Age is: " << m1.getAge() << endl;  // Age is: 0  --> this line shows error if the child(Male) class inherits the private/protected data member of the super(Human) class privately/protectedly
-    
-    m1.print(30);  // this will show compilation error
+	// cout << m1.age << endl;   // this will show compilation error
+	Human h1;
+	cout << "Age is: " << h1.getAge() << endl;  // Age is: 32759
+	cout << "Age is: " << m1.getAge() << endl;  // Age is: 0  --> this line shows error if the child(Male) class inherits the private/protected data member of the super(Human) class privately/protectedly
+
+	m1.print(30);  // this will show compilation error
 }
