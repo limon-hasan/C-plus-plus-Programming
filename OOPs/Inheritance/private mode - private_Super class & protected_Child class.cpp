@@ -34,7 +34,7 @@ public:
  	}
 };
 
-class Male : public Human {
+class Male : protected Human {
 
 public:
 	string color;
