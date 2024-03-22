@@ -58,7 +58,7 @@ public:
 
         void print1(int p) {
 		age = p;
-		cout <<"Age is: " << age << endl;   // This will show error because 'age' is a private member of the super class and it cannot be directly accessed inside the child class though using member function
+		cout <<"Age is: " << age << endl;   // This will show error because 'age' is a protected member of the super class and it cannot be directly accessed inside the child class though using member function
  	}
 };
 
