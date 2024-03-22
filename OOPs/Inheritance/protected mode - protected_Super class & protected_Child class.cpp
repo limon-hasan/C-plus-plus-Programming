@@ -21,7 +21,7 @@ class Human {
 
 private:
 	int age;
-protected:
+protected:   // protected
 	int height;
 public:
 	int weight;
@@ -45,6 +45,13 @@ public:
 		cout << "Number is " << y << endl;
 	}
 
+	int getHeight() {
+		return height;
+	}
+	
+ 	int getMember() {
+	 return height;
+	}
 };
 
 class Male : protected Human {
@@ -70,14 +77,25 @@ public:
 		height = p;
 		cout <<"Finally, Height is: " << height << endl;
 	}
+
+	void print2() {
+		int value = getMember();
+		value = value + 4;
+		cout << "Height is: " << value << endl;   // 'height' can be accessed not directly in the child class like this through member function
+	}
 };
 
 int main() {
     
         Human h1(90);  // prints -->  "Number is 90"
 	Male m1;   // called the parent class(Human) constructor first and then call the own constructor and prints "HI. Weight is: 48. HELLO " --> these three lines
+	cout << "Height is: " << m1.height << endl;   // This will show error becuase protected member of the super class cannot be accessed outise the child class and the parent class itself 
+
 	m1.print();  // prints "OKAY, now Height is: 22"
 	Male m2;  // called the parent class(Human) constructor first and then call the own constructor and prints "HI. Weight is: 268501009. HELLO "
 	Male m3(45);   // prints "height is: 45"
 	m1.print1(33);
+	m1.print2();
+	Human h1;
+	cout <<"Height is: " << h1.getHeight() << endl;
 }
