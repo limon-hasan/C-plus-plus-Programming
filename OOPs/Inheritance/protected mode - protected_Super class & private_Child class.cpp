@@ -18,6 +18,8 @@ class Human {
 private:
 	int age;
 protected:
+        int roll;
+protected:
 	int height;
 public:
 	int weight = 9;
