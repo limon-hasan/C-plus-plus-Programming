@@ -10,8 +10,10 @@ and all protected and private members remain protected and private, respectively
 
 //  protected members of a parent class are accessible directly in the child class and the parent class also.
 
-/*   When a child class inherits a private or protected member of its superclass privately or protectedly,
-     the inherited member remains inaccessible outside the child class and its subclasses. But the inherited member remains accessible within the child class and its subclasses.
+/*   When a child class inherits a protected member('roll') of its super class protectedly, 
+     then the inherited members cannot be directly accessible outside the child class or the super class itself but 
+     they can be accessible outside the parent and child class using member function like getHeight() function as follows. 
+     And they can also be accessible inside the child class like print1() and print2() function as follows.
 */
 
 #include <iostream>
