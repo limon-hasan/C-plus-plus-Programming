@@ -28,6 +28,10 @@ public:
 	void setWeight(int w) {
 		this->weight = w;
 	}
+
+        int getMember() {
+	 return age;
+ 	}
 };
 
 class Male : public Human {
@@ -43,15 +47,30 @@ public:
 		cout <<"Male sleeping " << endl;
 	}
 
+	int getAge() {
+		return age;
+	}
+
 	void print(int p) {
 		age = p;
 		cout << "Now, age is: " << age << endl;
 	}
+
+        void print1(int p) {
+		age = p;
+		cout <<"Age is: " << age << endl;   // This will show error because 'age' is a private member of the super class and it cannot be directly accessed inside the child class though using member function
+ 	}
 };
 
 int main() {
 
 	Male m1;
-	cout <<"Height is: "<< m1.height << endl;  // This will show a compilation error because height is declared protected there in the child class
-        m1.print();
+	cout <<"Height is: "<< m1.height << endl;  // This will show a compilation error because height is declared protected in the child class
+	cout <<"Age is: " << m1.age << endl;  // This will show error becuase protected member of the super class cannot be accessed outise the child class and the parent class itself
+	cout <<"Age is: " << m1.getAge() << endl;   // "Age is: 0"
+	m1.print();
+	m1.print1(7);
+	
+	Human h1;
+	cout <<"Age is: " << h1.age << endl;
 }
