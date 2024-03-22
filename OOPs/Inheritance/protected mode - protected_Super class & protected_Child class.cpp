@@ -10,6 +10,10 @@ and all protected and private members remain protected and private, respectively
 
 //  protected members of a parent class are accessible directly in the child class and the parent class also.
 
+/*   When a child class inherits a private or protected member of its superclass privately or protectedly,
+     the inherited member remains inaccessible outside the child class and its subclasses.
+*/
+
 #include <iostream>
 using namespace std;
 
