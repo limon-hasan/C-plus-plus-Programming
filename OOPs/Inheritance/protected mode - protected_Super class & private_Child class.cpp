@@ -41,6 +41,14 @@ public:
 	Human(int y) {
 		cout << "Number is " << y << endl;
 	}
+
+	int getRoll() {
+	        return roll;
+	} 
+
+	int getMember() {
+	 return roll;
+ 	}
 };
 
 class Male : private Human {
@@ -71,6 +79,15 @@ public:
 		age = p;  // here, age is a private member of the parent(human) class and it remains private in the child(male) class that's why it cannot be accsessible in the child class
 		cout << "Age is: " << age << endl;  // It will show a compilation error because of private member(age)
 	}   */
+        int getRoll() {
+		return roll;
+	}
+
+	void print4() {
+		int value = getMember();
+		value = value + 4;
+		cout << "Roll is: " << value << endl;   // 'age' can be accessed not directly in the child class like this through member function
+	}
 };
 
 int main() {
@@ -86,4 +103,9 @@ int main() {
 	// m1.print3(111); 
 	// m1.printing(65);   // It will also show error because printing() is a member function of parent class but we inherit it in the child class privately 
 	h1.printing(23);   
+	cout <<"ROll is: " << m1.roll << endl;
+	cout <<"Roll is: " << m1.getRoll() << endl;
+	m1.print4();
+	Human h1;
+	cout <<"Roll is: " << h1.getRoll() << endl;
 }
