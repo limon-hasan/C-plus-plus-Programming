@@ -1,6 +1,6 @@
 // Inheritance - memebr of the Super class is in private mode
 
-/* When the member of the super class is in private mode and the child class inherits it from publicly, private member will remain private within the child(Male) class 
+/* When the member of the super class is in private mode and the child class inherits it from protectedly, private members remain private within the child(Male) class 
    and they will only be accessible wihtin the super class and the child class but cannot not be accessible outside the super and child class though using member function
 */
 
