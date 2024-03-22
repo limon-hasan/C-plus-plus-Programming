@@ -26,7 +26,7 @@ public:
 	}
 
 	int getAge() {
-		return this->age;
+		return age;
 	}
 
         int getMember() {
