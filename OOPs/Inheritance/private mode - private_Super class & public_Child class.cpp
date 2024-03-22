@@ -28,6 +28,10 @@ public:
 	int getAge() {
 		return this->age;
 	}
+
+        int getMember() {
+	        return age;
+ 	}
 };
 
 class Male : public Human {
