@@ -6,8 +6,10 @@ the member of the super class will become private inside the child class and the
 
 //  protected members of a parent class are accessible directly in the child class and the parent class also.
 
-/*   When a child class inherits a private or protected member of its superclass privately or protectedly,
-     the inherited member remains inaccessible outside the child class and its subclasses. But the inherited member remains accessible within the child class and its subclasses.
+/*   When a child class inherits a protected member('roll') of its superclass privately, 
+     then the inherited members cannot be directly accessible outside the child class or the super class itself but 
+     they can be accessible outside the parent and child class using member function like getRoll() function as follows. 
+     And they can also be accessible inside the child class like print4() and print5() function as follows.
 */
 
 #include <iostream>
@@ -88,6 +90,11 @@ public:
 		value = value + 4;
 		cout << "Roll is: " << value << endl;   // 'age' can be accessed not directly in the child class like this through member function
 	}
+
+	void print5(int z) {
+		roll = z;
+		cout << "Roll is: " << roll << endl;
+	}
 };
 
 int main() {
@@ -106,6 +113,7 @@ int main() {
 	cout <<"ROll is: " << m1.roll << endl;
 	cout <<"Roll is: " << m1.getRoll() << endl;
 	m1.print4();
+	m1.print5();
 	Human h1;
 	cout <<"Roll is: " << h1.getRoll() << endl;
 }
