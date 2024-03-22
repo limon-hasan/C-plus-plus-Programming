@@ -5,7 +5,7 @@
 */
 
 // In C++, private members of a parent class cannot be directly accessed in a child class and outside the child class also, regardless of the type of inheritance used (public, protected, or private).
-// But they are accessible within the child class but not directly
+// But the inherited member remains accessible but not directly within the child class itself and the super class.
 
 #include <iostream>
 using namespace std;
