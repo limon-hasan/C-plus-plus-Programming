@@ -54,7 +54,7 @@ int main() {
 	// cout << m1.age << endl;   // this will show compilation error
 	Human h1;
 	cout << "Age is: " << h1.getAge() << endl;  // Age is: 32759
-	cout << "Age is: " << m1.getAge() << endl;  // Age is: 0  --> this line shows error if the child(Male) class inherits the private/protected data member of the super(Human) class privately/protectedly
+	cout << "Age is: " << m1.getAge() << endl;  // Age is: 0  --> this line shows error beacuse the protected/private member of the super class cannot be accessible outside the child and super class itself if the child(Male) class inherits the private/protected data member of the super(Human) class privately/protectedly
 
 	m1.print(30);  // this will show compilation error
 }
