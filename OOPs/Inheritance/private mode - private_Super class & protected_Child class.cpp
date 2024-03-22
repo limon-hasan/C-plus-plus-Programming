@@ -65,11 +65,10 @@ int main() {
 	Male m1;
 	// cout <<"Height is: "<< m1.height << endl;  // This will show a compilation error because height is declared protected there in the child class
 
-	// cout << m1.age << endl;   // this will show compilation error
+	// cout << m1.age << endl;   // This will show compilation error becuase private member of the super class cannot be accessed outise the child class and the parent class itself
 	Human h1;
 	cout << "Age is: " << h1.getAge() << endl;  // Age is: 32759
-	cout << "Age is: " << m1.getAge() << endl;  // Age is: 0  --> this line shows error beacuse the protected/private member of the super class cannot be accessible outside the child and super class itself if the child(Male) class inherits the private/protected data member of the super(Human) class privately/protectedly
-
+	cout << "Age is: " << m1.getAge() << endl;  // This will show error because 'age' is a private member of the super class and it cannot be accessed outside the parent and child class though using member function                                      
 	m1.print(30);  // this will show compilation error because private member of the super class cannot be accessed directly inside the child class
 	m1.print1();  // Here in this function, private member of the super class 'age' is accessed inside the child(Male) class but not directly
 }
