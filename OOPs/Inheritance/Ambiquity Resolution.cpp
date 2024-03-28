@@ -38,12 +38,17 @@ public:
 int main()  
 {  
     C c;  
-
     // Call display() from class C
     c.display();
 
     // Call display() from class A and B using view() method
     c.view();
+
+    /*  Or, we can do like this as follows : --> 
+        B b;
+        b.display();
+        b.B :: display();
+    */
 
     return 0;  
 }
