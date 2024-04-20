@@ -1,4 +1,12 @@
-// Assignment Problem- 2: Multilevel Inheritance Problem --->
+// OOP Assignment Problem- 2: Multilevel Inheritance Problem --->
+
+/* Qn: --> 
+   Imagine you're designing software for a car rental agency. Create a base class called `Vehicle` with properties like `fuelType` and `capacity`. 
+   Derive a class `Car` from `Vehicle`, representing different cars available for rent, with an additional property `numSeats`. 
+   Further derives a class `Sedan` from `Car`, representing sedan cars with extra boot space. 
+   Implement member functions to display details of each vehicle including fuel type, capacity, number of seats, and boot space for sedans. 
+   Test your code by creating objects representing different types of cars and displaying their details.
+*/
 
 #include <iostream>
 using namespace std;
