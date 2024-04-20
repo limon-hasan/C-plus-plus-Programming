@@ -1,6 +1,14 @@
 // Assignment problem:
 // Single Inheritance Problem --->
 
+/* Qn: -->
+   You're tasked with developing software for a construction company. 
+   Design a base class called `Shape` representing various geometric shapes used in construction, with properties like `width` and `height`. 
+   Derive a class `Rectangle` from `Shape`, representing rectangular structures. 
+   Implement member functions to calculate the area and perimeter of a rectangular structure. 
+   Test your code by creating objects representing different rectangular structures and displaying their area and perimeter.
+*/
+
 #include <iostream>
 using namespace std;
 
