@@ -56,3 +56,41 @@ int main() {
 	r1.details();
 }
 
+
+
+// --------------------------------------------------------------------------
+
+
+
+// Normal problem -->
+#include<iostream>
+using namespace std;
+
+class Animal {
+public:
+	int age;
+	int height;
+
+	void bark() {
+		cout << "Barking" << endl;
+	}
+
+};
+
+class Human {
+public:
+	void speak() {
+		cout <<"Speaking" << endl;
+	}
+};
+
+class Hybrid : public Human, public Animal {
+
+};
+
+int main() {
+	Hybrid d;
+	d.speak();
+	d.bark();
+	
+}
