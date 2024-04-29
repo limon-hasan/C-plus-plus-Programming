@@ -20,6 +20,6 @@ int main() {
 	if(temp == n) {
 		cout << "Yes" << endl;
 	}
-		else
-			cout <<"No" << endl;
+	else
+	    cout <<"No" << endl;
 }
