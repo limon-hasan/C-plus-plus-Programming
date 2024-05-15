@@ -1,5 +1,5 @@
 // Reverse an array
-// optimal approach
+// Solution 1: optimal approach -->
 
 #include <bits/stdc++.h>  
 using namespace std;
@@ -38,7 +38,7 @@ int main() {
 // -----------------------------------------------------------
 
 
-// Brute force approach --> using an extra array 
+// Solution 2: Brute force approach --> using an extra array 
 
 #include <iostream>
 using namespace std;
@@ -62,3 +62,12 @@ int main() {
 		cout << arr1[i] <<" ";
 	} cout << endl;
 }
+
+
+
+// -----------------------------------------------------
+
+
+// Solution 3: Recursive method -->
+
+
