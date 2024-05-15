@@ -137,3 +137,46 @@ int main() {
 	
 	return 0;
 }
+
+
+
+// ----------------------------------------------------------
+
+
+// Solution 4: Using library function (New Approach)
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+/*
+The reverse() function in C++ is predefined in a header file algorithm. Syntax: array_name.reverse(BidirectionalIterator first, BidirectionalIterator last)
+Bidirectional iterators first and last indicate the starting and ending positions in the array. Elements that lie in this range are reversed.
+Note that this range includes the first but excludes the last element.
+*/
+
+#include <iostream>
+#include<algorithm>
+using namespace std;
+
+void printArray(int arr[], int n) {
+	for(int i = 0; i<n; i++) {
+		cout << arr[i] <<" ";  
+	} cout << endl;
+}
+
+//Reverse array using library function
+void reverseArray(int arr[], int n) {
+	//Reversing elements from index 0 to n-1 
+	reverse(arr, arr + n);   // in-built function 
+}
+
+int main() {
+
+	int n;
+	cin >> n;
+	int arr[n];
+	for (int i = 0; i < n; i++) {
+		cin >> arr[i];
+	}
+	reverseArray(arr, n);
+	printArray(arr, n);
+}
