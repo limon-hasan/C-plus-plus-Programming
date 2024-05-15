@@ -39,6 +39,8 @@ int main() {
 
 
 // Solution 2: Brute force approach --> using an extra array 
+//Time complexity --> O(n) = O(n) + O(n)[main function] + O(n) + O(n)[reverseArray()] + O(n)[printArray()]
+// space complexity --> O(n) = O(n)[main function] + O(n)[reverseArray()] + O(1)[All other variables in both functions(i, j, n) ]
 #include <iostream>
 using namespace std;
 
