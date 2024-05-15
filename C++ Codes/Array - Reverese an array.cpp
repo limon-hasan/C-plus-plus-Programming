@@ -1,6 +1,6 @@
 // Reverse an array
 
-// Solution 1: optimal approach -->
+// Solution 1: optimal approach --> Space-optimized iterative method(Two pointer)
 #include <bits/stdc++.h>  
 using namespace std;
 
