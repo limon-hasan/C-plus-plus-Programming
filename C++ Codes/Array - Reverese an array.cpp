@@ -85,6 +85,9 @@ int main() {
 
 
 // Solution 3: Recursive method --> Recursive method with two pointers
+// time complexity --> O(n) = O(n/2)[reveseArray()] + O(n)[reverse()] + O(n)+O(n)+O(n)+O(n)[main funtion()]
+/* space complexity --> O(n) = O(n/2)[due to recursion in reveseArray()] + O(n)[The space complexity of reverse() is also dominated by the space complexity of reverseArray, which is O(n)]
+				+ O(n)+O(n)[main funtion and for the reveseArray() fucntion due to the call stack]    */ 
 #include<iostream>
 using namespace std;
 
