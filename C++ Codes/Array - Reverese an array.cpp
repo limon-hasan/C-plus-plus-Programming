@@ -55,6 +55,11 @@ void reverseArray(int arr[], int n) {
 		arr2[j] = arr[i];
 		j--;
 	}
+	/* This above for loop will be written like following this as well: 
+ 	for(int i = n-1; i>=0; i--) {
+		arr2[n-i-1] = arr[i];
+	}
+	*/
 	printArray(arr2, n);
 }
 
