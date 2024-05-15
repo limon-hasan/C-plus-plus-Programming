@@ -38,7 +38,7 @@ int main() {
 // -----------------------------------------------------------
 
 
-// Brute force approach
+// Brute force approach --> using an extra array 
 
 #include <iostream>
 using namespace std;
