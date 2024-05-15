@@ -1,6 +1,6 @@
 // Reverse an array
-// Solution 1: optimal approach -->
 
+// Solution 1: optimal approach -->
 #include <bits/stdc++.h>  
 using namespace std;
 
@@ -39,28 +39,34 @@ int main() {
 
 
 // Solution 2: Brute force approach --> using an extra array 
-
 #include <iostream>
 using namespace std;
+
+void printArray(int arr[], int n) {
+	for(int i = 0; i<n; i++) {
+		cout << arr[i] <<" ";  
+	} cout << endl;
+}
+
+void reverseArray(int arr[], int n) {
+	int arr2[n];
+	int j = n-1;
+	for(int i = 0; i<n; i++) {
+		arr2[j] = arr[i];
+		j--;
+	}
+	printArray(arr2, n);
+}
 
 int main() {
 
 	int n;
 	cin >> n;
-	int arr[n], arr1[n];
+	int arr[n];
 	for (int i = 0; i < n; i++) {
 		cin >> arr[i];
 	}
-	
-	int j = n - 1;
-	for(int i= 0; i< n; i++) {
-		arr1[i] = arr[j];
-		j--;
-	}
-
-	for(int i = 0; i<n; i++) {
-		cout << arr1[i] <<" ";
-	} cout << endl;
+	reverseArray(arr, n);
 }
 
 
@@ -68,6 +74,53 @@ int main() {
 // -----------------------------------------------------
 
 
-// Solution 3: Recursive method -->
+// Solution 3: Recursive method --> using recursion with two pointers
+#include<iostream>
+using namespace std;
 
+void reverseArray(int arr[], int left, int right) {
 
+	// base case
+ 	if(left >= right)  // if(left >= right) this will als be valid here
+ 	{
+ 		return;
+ 	}
+
+ 	swap(arr[left], arr[right]);
+
+ 	// recursive call
+ 	reverseArray(arr, left+1, right-1);
+}
+
+void reverse(int arr[], int n) {
+	
+	// using two pointer 
+	int left  =0;
+ 	int right = n-1;
+    
+    reverseArray(arr, left, right);
+}
+
+int main() {
+
+	int n;
+	cin >> n;
+	int arr[n];
+	for(int i = 0; i<n; i++) {
+		cin >> arr[i];
+	}
+
+	cout <<"Before reverse: ";
+	for(int i=0; i<n; i++) {
+		cout << arr[i] <<" ";
+	} cout << endl;
+
+	reverse(arr, n);
+
+	cout <<"After reverse: ";
+	for(int i=0; i<n; i++) {
+		cout << arr[i] <<" ";
+	} cout << endl;
+	
+	return 0;
+}
