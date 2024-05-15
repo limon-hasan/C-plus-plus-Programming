@@ -1,6 +1,9 @@
 // Reverse an array
 
 // Solution 1: optimal approach --> Space-optimized iterative method(Two pointer)
+// time complexity --> O(n) = in reverse() TC is O(n/2) which simplifies to O(n) because the number of iterations is approximately n/2 since in each iteration, two elements are processed.
+// space complexity --> O(1)
+
 #include <bits/stdc++.h>  
 using namespace std;
 
