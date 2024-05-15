@@ -79,7 +79,7 @@ int main() {
 // -----------------------------------------------------
 
 
-// Solution 3: Recursive method --> using recursion with two pointers
+// Solution 3: Recursive method --> Recursive method with two pointers
 #include<iostream>
 using namespace std;
 
