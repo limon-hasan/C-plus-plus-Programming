@@ -54,7 +54,6 @@ public:
 		} else {
 			cout << name << " no promotion for you! " << endl;
 		}
-
 	}
 };
 
