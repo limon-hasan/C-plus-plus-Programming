@@ -134,7 +134,7 @@ class Dog : public Animal {
 
 };
 
-class GermanShepherd : public Animal {
+class GermanShepherd : public Dog {
 
 };
 
