@@ -1,4 +1,5 @@
-// compile time polymorphism
+// compile time polymorphism -- Static polymorphism
+
 // operator overloading
 #include<iostream>
 using namespace std;
