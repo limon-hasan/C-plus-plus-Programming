@@ -121,7 +121,7 @@ int main()
 	d.print();  // shows the child class function
 
   
-  bptr->base::show();  // shows base class function
+  	bptr->base::show();  // shows base class function
 	// bptr->derived::show();  // this line shows error because ‘derived’ is not a base of ‘base’
 	d.base::show();  // shows base class function
 	d.derived::show();  // shows child class function
