@@ -64,7 +64,7 @@ public:
 string name = "limon";
 
 	// implementation of the pure virtual function
-	void show() 
+	void show()   // If i write 'override' here that will be okay
 	{ 
 		cout << "In Derived \n"; 
 	}
