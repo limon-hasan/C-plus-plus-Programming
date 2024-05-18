@@ -1,4 +1,4 @@
-// compile time polymorphism
+// compile time polymorphism --> Static polymorphism
 
 // function overloading --> In function overloading, same function name cannot be declared even if there return type is different but they can be declared if their parameter can be changed
 // that means if two functions have same one string variable in their parameter, the functions cannot be overloaded then but if one is 'char' and another one is 'string' then they can be overloaded --> that is called function overloading with different type of arguemetns
