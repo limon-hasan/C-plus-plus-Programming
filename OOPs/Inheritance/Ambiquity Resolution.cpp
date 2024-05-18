@@ -1,12 +1,12 @@
 #include <iostream>  
-using nampespace std;
+using namespace std;
 
 class A  
 {  
 public:  
     void display()  
     {  
-        cout << "Class A" << std::endl;  
+        cout << "Class A" << endl;  
     }  
 };  
 
@@ -15,7 +15,7 @@ class B
 public:  
     void display()  
     {  
-        cout << "Class B" << std::endl;  
+        cout << "Class B" << endl;  
     }  
 };  
 
@@ -31,7 +31,7 @@ public:
     // Override display() in class C
     void display()
     {
-        cout << "Class C" << std::endl;
+        cout << "Class C" << endl;
     }
 };  
 
