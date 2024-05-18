@@ -12,7 +12,8 @@ public:
 	virtual void fun() = 0;
 
 	// getter function to access x
-	int getX() { return x; 
+	int getX() { 
+ 	return x; 
   }
 };
 
@@ -24,7 +25,7 @@ class Derived : public Base {
 public:
 	// implementation of the pure virtual function
 	void fun() override { 
-    cout << "fun() called"; 
+    	cout << "fun() called"; 
   }
 };
 
