@@ -124,8 +124,8 @@ int main() {
 // ---------------------------------------------------------------------------
 
 
+
 // EXample: 
-// C++ program to illustrate the hybrid inheritance 
 #include <bits/stdc++.h> 
 using namespace std; 
 
