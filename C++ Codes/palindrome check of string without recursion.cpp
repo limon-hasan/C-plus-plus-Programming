@@ -1,4 +1,6 @@
 // leetcode problem - https://leetcode.com/problems/valid-palindrome/description/
+// Time complexity --> O(n)
+//Space complexity --> O(1)  --> O(1) because the additional space used is constant, regardless of the input size n
 
 class Solution {
 public:
