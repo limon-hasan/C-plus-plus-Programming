@@ -3,7 +3,8 @@
 // Multimap
 // Unordered Map in all cases works in constant time --> O(1)
 // In worst cases, it works for O(n)
-// In unordered map, you can only have individual data types, you cannot say like "map<pair<int, int>, int>mpp" --> here "pair<int, int>" or 'vector' cannot be a key in unordered map but in map, any particular data type can be a key
+//  In the map data structure, the data type of key can be anything like int, double, pair<int, int>, etc. But for unordered_map the data type is limited to integer, double, string, etc.
+// We cannot have an unordered_map whose key is pair<int, int>.
 
 #include <bits/stdc++.h>
 using namespace std;
