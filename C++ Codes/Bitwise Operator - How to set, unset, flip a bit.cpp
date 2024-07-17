@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-	int n;
+	int n;  // n = 6 = 110
 	cin >> n;
 	int ans = n | 1;  // ans = 110 | 001 = 111
 	// cout << ans << endl;  
