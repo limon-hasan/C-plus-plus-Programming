@@ -14,6 +14,7 @@
                     ###
 */
 
+// (1)  --> 
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -53,6 +54,7 @@ int main()
 
 // OR -->
 
+// (2)  --> 
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -76,6 +78,45 @@ int main()
                     }
                 }
                 cout << endl;
+            }
+            cout << endl;
+        }
+    }
+}
+
+
+
+//_______________________________________________
+
+
+
+// OR --> 
+// (3)  --> 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    while(1) {
+        int h, w;
+        cin >> h >> w;
+        if(h == 0 && w == 0) break;
+        else {
+            for(int i = 1; i <= h; i++) {
+                if(i == 1 || i == h) {
+                    for(int i = 1; i <= w; i++) {
+                        cout <<"#";
+                    } 
+                    cout << endl;
+                }
+                else {
+                    cout <<"#";
+                    for(int i = 2; i <= w - 1; i++) {
+                        cout <<".";
+                    }
+                    cout <<"#"; 
+                    cout << endl;
+                } 
             }
             cout << endl;
         }
