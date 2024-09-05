@@ -1,44 +1,5 @@
 // Reverse an array
 
-// For CP Style: -->
-#include<bits/stdc++.h>
-using namespace std;
-
-const int mx = 1000123;
-int freq[mx];
-int freq1[mx];
-
-int main() {
-        int n;
-        cin >> n;
-
-        for(int i = 0; i < n; i++) {  
-            cin >> freq[i];
-        }
-
-        int j = 0;
-        for(int i = n - 1; i >= 0; i--) {
-            freq1[i] = freq[j];
-            j++;
-        }
-	/* The above loop we can use like the following way also :
-	for(int i = n - 1, j = 0; i >= 0; i--, j++) {
-            freq1[i] = freq[j];
-        }
-	*/
-
-        for(int i = 0; i < n; i++) { 
-            cout<< freq1[i]<<" ";
-        }
-	return 0;
-}
-
-
-
-// _________________________________________________________________________________________________
-
-
-
 // Solution 1: optimal approach --> Space-optimized iterative method(Two pointer)
 // time complexity --> O(n) = in reverse() TC is O(n/2) which simplifies to O(n) because the number of iterations is approximately n/2 since in each iteration, two elements are processed.
 // space complexity --> O(1)
@@ -98,6 +59,11 @@ int main() {
     int j = n-1;
         while(i <= j) {
             swap(freq[i], freq[j]);
+	    /* We can do swap as the following way as well: -->
+     	    int temp = freq[i];
+            freq[i] = freq[j];
+            freq[j] = temp;
+     	    */
             i++;
             j--;
         }
