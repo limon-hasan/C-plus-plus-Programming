@@ -1,6 +1,6 @@
 // Reverse an array
 
-// For CP: -->
+// For CP Style: -->
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -21,6 +21,11 @@ int main() {
             freq1[i] = freq[j];
             j++;
         }
+	/* The above loop we can use like the following way also :
+	for(int i = n - 1, j = 0; i >= 0; i--, j++) {
+            freq1[i] = freq[j];
+        }
+	*/
 
         for(int i = 0; i < n; i++) { 
             cout<< freq1[i]<<" ";
