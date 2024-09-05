@@ -77,6 +77,38 @@ int main() {
 
 
 
+// OR -->
+// For CP Style: -->
+#include<bits/stdc++.h>
+using namespace std;
+
+const int mx = 1000123;
+int freq[mx];
+
+int main() {
+  
+        int n;
+        cin >> n;
+
+        for(int i = 0; i < n; i++) {  // Adjusted loop to run from 0 to n-1
+            cin >> freq[i];
+        }
+
+    int i = 0; 
+    int j = n-1;
+        while(i <= j) {
+            swap(freq[i], freq[j]);
+            i++;
+            j--;
+        }
+
+        for(int i = 0; i < n; i++) {  // Adjusted loop to run from 0 to n-1
+            cout<< freq[i]<<" ";
+        }
+}
+
+
+
 // -----------------------------------------------------------
 
 
@@ -116,6 +148,42 @@ int main() {
 		cin >> arr[i];
 	}
 	reverseArray(arr, n);
+}
+
+
+
+// OR -->
+// For CP Style: -->
+#include<bits/stdc++.h>
+using namespace std;
+
+const int mx = 1000123;
+int freq[mx];
+int freq1[mx];
+
+int main() {
+        int n;
+        cin >> n;
+
+        for(int i = 0; i < n; i++) {  
+            cin >> freq[i];
+        }
+
+        int j = 0;
+        for(int i = n - 1; i >= 0; i--) {
+            freq1[i] = freq[j];
+            j++;
+        }
+	/* The above loop we can use like the following way also :
+	for(int i = n - 1, j = 0; i >= 0; i--, j++) {
+            freq1[i] = freq[j];
+        }
+	*/
+
+        for(int i = 0; i < n; i++) { 
+            cout<< freq1[i]<<" ";
+        }
+	return 0;
 }
 
 
