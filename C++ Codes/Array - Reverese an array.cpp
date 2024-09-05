@@ -67,6 +67,13 @@ int main() {
             i++;
             j--;
         }
+	/* The above loop can be run as the follwing way also: --> 
+ 	for(int i = n - 1, j = 0; i >= j; i--, j++) {
+            int temp = freq[i];
+            freq[i] = freq[j];
+            freq[j] = temp;
+        }
+	*/
 
         for(int i = 0; i < n; i++) {  // Adjusted loop to run from 0 to n-1
             cout<< freq[i]<<" ";
