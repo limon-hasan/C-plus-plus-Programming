@@ -8,6 +8,7 @@ Output:
 4
 */  
 
+// Using Map : 
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -32,4 +33,33 @@ int main() {
                 break;
             }
         }
+}
+
+
+
+// ___________________________________________________
+
+
+// Or -->
+#include<bits/stdc++.h>
+using namespace std;
+
+const int mx = 200024;
+int arr[mx];
+int freq[mx];
+
+int main() {
+        int n;
+        cin >> n;
+        int ans1 = 0;
+        for(int i= 1; i <= n - 1; i++) {
+            cin >> arr[i];
+            ans1 += arr[i];
+        }
+
+    int ans2 = 0;
+        for(int i = 1; i <= n; i++) {
+            ans2 += i;
+        }
+        cout << ans2 - ans1 << endl;
 }
