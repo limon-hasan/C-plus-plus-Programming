@@ -27,16 +27,16 @@ int main() {
     char str5[] = {'a', 'x', 'p','\0'};
     cout << str5 << endl;
 
-  	char s[10];
-  	s[0] = 'd';
-  	s[1] = 't';
-  	s[2] = 'p';
-  	s[3] = '\0';
+    char s[10];
+    s[0] = 'd';
+    s[1] = 't';
+    s[2] = 'p';
+    s[3] = '\0';
 	
-  	cout << s << endl;  // dtp
+    cout << s << endl;  // dtp
 
     string st;
     cin >> st;
     cout << st << endl;
-	return 0;
+    return 0;
 }
