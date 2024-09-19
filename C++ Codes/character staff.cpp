@@ -2,6 +2,8 @@
 using namespace std;
 
 int main() {
+
+    // amader kache jodi index (0,1,2,3...) thake tahole amra oi index er shathe 'a'(97) add korle oi index e thaka character ke paye jabo --> (index + 'a') = oi index er character
     int p = 'e';  cout << p << endl; // 101
 
     char q = 'e'; cout << q << endl;  // e
