@@ -2,10 +2,10 @@
 using namespace std;
 
 int main() {
-
-    // amader kache jodi index (0,1,2,3...) thake tahole amra oi index er shathe 'a'(97) add korle oi index e thaka character ke paye jabo --> (index + 'a') = oi index er character
+    // amader kache jodi index (i = 0,1,2,3...) thake tahole amra oi index er shathe 'a'(97) add korle oi index e thaka character ke paye jabo --> (index + 'a') = oi index er character
+    // Ar character(a,b,c....) dewa thakle amra tokhon oi character theke 'a' character mius korle oi character er index(i = 0,1,2,3...) peye jabo
+    
     int p = 'e';  cout << p << endl; // 101
-
     char q = 'e'; cout << q << endl;  // e
 
     // printing character from its "Ascii" value
