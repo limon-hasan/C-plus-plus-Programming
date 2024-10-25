@@ -2,6 +2,17 @@
 using namespace std;
 
 int main() {
+
+    /* char to int conversion ---->
+    char ch = '7'; // character representing the digit 7
+    int num = ch - '0'; // convert the char '7' to the integer 7
+    */
+
+    /* int to char conversion ---->
+    int num = 7;
+    char ch = num + '0';  // Convert the integer 7 to the character '7'
+    */
+    
     // amader kache jodi index (i = 0,1,2,3...) thake tahole amra oi index er shathe 'a'(97) add korle oi index e thaka character ke paye jabo --> (index + 'a') = oi index er character
     // Ar character(a,b,c....) dewa thakle amra tokhon oi character theke 'a' character minus korle oi character er index(i = 0,1,2,3...) peye jabo --> (ch - 'a) = oi ch character er index
     
