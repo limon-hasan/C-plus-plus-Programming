@@ -161,6 +161,27 @@ void explainPair() {
     pair<int, int> p;
     cin >> p.first >> p.second;
     cout << p.first <<" " << p.second << endl;
+
+
+	
+
+    // pair sorting with comparator sort which tells the sorting funiton how pairs will be sorted -->
+	bool comp(pair<int, int> &p1, pair<int, int> &p2) {
+	    if(p1.first < p2.first) return 0;
+	    else if(p1.first == p2.first) return p1.second < p2.second;
+	    else return 1;
+	}
+	
+	void solve() {
+	    vector<pair<int, int>> v;
+	    v = {{3,1}, {6,9}, {2,6}, {3,5}, {5,3}, {1,2}};
+	
+	    sort(v.begin(), v.end(), comp);
+	    for(auto aa : v) {
+	        cout << aa.first  << " -> " << aa.second << endl; 
+	    }
+	}
+	
 }
 
 int main() {
